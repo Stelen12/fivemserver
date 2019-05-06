@@ -5,22 +5,22 @@ lang = "en"
 
 settings = {}
 settings["en"] = {
-	openMenu = "Press ~g~E~w~ to open the menu.",
-	electricError = "~r~Drive an electric car.",
-	fuelError = "~r~You do not drive an electric car.",
-	buyFuel = "Buy fuel",
+	openMenu = "Presiona ~g~E~w~ para abrir el menu.",
+	electricError = "~r~Maneja un auto electrico.",
+	fuelError = "~r~nNo tenes un auto electrico.",
+	buyFuel = "Comprar gasolina",
 	liters = "Liters",
 	percent = "Percent",
-	confirm = "Confirm",
-	fuelStation = "Gas station",
+	confirm = "Confirmar",
+	fuelStation = "Estacion de servicio",
 	boatFuelStation = "Gas station Boats",
 	avionFuelStation = "Gas station aircraft",
 	heliFuelStation = "Gas station helicopters",
-	getJerryCan = "Press ~g~E~w~ to buy a Canister ($"..petrolCanPrice..")",
+	getJerryCan = "Presiona ~g~E~w~ para comprar un Canister ($"..petrolCanPrice..")",
 	refeel = "Press ~g~E~w~ to feed.",
 	YouHaveBought = "Bought ",
 	fuel = " Liters of fuel",
-	price = "Price"
+	price = "Precio"
 }
 
 settings["fr"] = {

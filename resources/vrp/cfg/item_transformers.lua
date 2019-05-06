@@ -244,16 +244,16 @@ cfg.item_transformers = {
     }
   },
   {
-    name="Driver License", -- menu name
+    name="Licencia de conducir", -- menu name
     r=255,g=125,b=0, -- color
     max_units=1,
     units_per_minute=1,
-    x=-261.40533447266,y=-965.15747070313,z=31.224115371704,        
+    x=229.17431640625,y=-1396.205078125,30.491037368774,        
     radius=2, height=1.0, -- area
     recipes = {
       ["Driver"] = { -- action name
-       description="Buy a Driver License.", -- action description`
-        in_money=150, -- money taken per unit
+       description="Comprar una licencia de conducir.", -- action description`
+        in_money=3000, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={
