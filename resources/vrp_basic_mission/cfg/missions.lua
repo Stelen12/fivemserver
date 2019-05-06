@@ -1,7 +1,7 @@
 
 local cfg = {}
 					-- SET YOUR LANGUAGE HERE - MAKE SURE IT'S INSIDE THE ""
-cfg.lang = "es"		-- en / fr / it / ger / pt / ru / lith / dan / ar / pl / es / swe / fin / cn / ro 
+cfg.lang = "en"		-- en / fr / it / ger / pt / ru / lith / dan / ar / pl / es / swe / fin / cn / ro 
 					-- English/Français/Italiano/Deutsche/Português/Pусский/Lietuvių/Dansk/العربية/Polskie/Español/Svenska/Suomalainen/中文/Română
 
 -- REPAIR
