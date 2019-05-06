@@ -85,7 +85,7 @@ cfg.groups = {
   },
   ["Fisher"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are a Fisherman."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos pescador."}) end
 	},
 	"mission.delivery.fish",
     "fisher.service",
@@ -101,7 +101,7 @@ cfg.groups = {
     },
   ["Airline Pilot"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are Pilot, salary : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un piloto, salario : $2000."}) end
 	},
     "airlines.service",
 	"air.vehicle",
@@ -109,7 +109,7 @@ cfg.groups = {
   },
   ["Mafia"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are a member of the mafia."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un participante de una mafia."}) end
 	},
     "police.menu",		-- Acces to the police menu to use all of the things below.
 	"police.easy_cuff", -- Acces to cuff someone
@@ -311,7 +311,7 @@ cfg.groups = {
   },
   ["Mechanic"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are Mechanic, salary : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
 	},
     "vehicle.repair",
     "vehicle.replace",
@@ -952,7 +952,7 @@ cfg.users = {
 
 cfg.selectors = {
   ["Job Selector"] = {
-    _config = {x = -268.363739013672, y = -957.255126953125, z = 31.22313880920410, blipid = 351, blipcolor = 47},
+    _config = {x = -261.40533447266, y = -965.15747070313, z = 31.22411537170, blipid = 351, blipcolor = 47},
     "UBER",
     "Mechanic",
 	"Delivery",
