@@ -26,7 +26,7 @@ cfg.display_css = [[
 }
   .div_money .symbol{
 
-  content: url('https://i.imgur.com/JUz1njC.png'); 
+  content: url('https://i.imgur.com/RV0uzgg.png'); 
  
 }
 
