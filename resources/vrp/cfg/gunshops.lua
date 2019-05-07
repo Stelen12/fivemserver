@@ -214,7 +214,7 @@ _config = {blipid=110,blipcolor=74, permissions = {"mafia.loadshop"}},
 -- list of gunshops positions
 
 cfg.gunshops = {
-  {"Principal", 20.872158050537,-1106.8052978516,29.797029495239},
+  {"eastlossantos1", 20.872158050537,-1106.8052978516,29.797029495239},
   {"emsloadout", 232.89363098145,-1368.3338623047,39.534381866455}, -- spawn hospital
   {"emsloadout", 1837.8341064453,3671.3837890625,34.276763916016}, -- sandy shores
   {"emsloadout", -246.91954040527,6330.349609375,32.42618560791}, -- paleto
