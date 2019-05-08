@@ -1,2 +1,4 @@
 Sun May  5 17:44:10 2019 => 1 fined 2 the amount of 100 for por topo
 
+Wed May  8 20:09:47 2019 => 1 fined 2 the amount of 10000 for Topacio
+Wed May  8 20:10:24 2019 => 1 fined 2 the amount of 1000 for topo de mierda

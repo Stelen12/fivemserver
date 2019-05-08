@@ -10,8 +10,8 @@ local emergency_male = { model = "s_m_m_paramedic_01" }
 local emergency_female = { model = "s_f_y_paramedic_01" }
 local fbi_male = { model = "s_m_y_swat_01" }
 local sheriff_male = { model = "s_m_y_sheriff_01"}
-local sheriff_female = { model = "s_f_y_sheriff_01"}
-local hway_male = { model = "s_m_y_hwaycop_01"}
+local sheriff_female = { model = "s_m_y_sheriff_01"}
+local hway_male = { model = "s_m_y_cop_01"}
 local cop_male = { model = "s_m_y_cop_01"}
 local ups_male = { model = "s_m_m_ups_02"}
 local cop_female = { model = "s_f_y_cop_01"}
@@ -19,8 +19,8 @@ local detective_male = { model = "s_m_m_CIASec_01"}
 local officer_male = { model = "s_m_y_cop_01"}
 local bounty_male = { model = "s_m_y_BlackOps_01"}
 local captain_male = { model = "s_m_y_fibcop_01"}
-local lieutenant_male = { model = "s_m_m_Armoured_02"}
-local sergeant_male = { model = "s_m_y_Ranger_01"}
+local lieutenant_male = { model = "s_m_y_hwaycop_01"}
+local sergeant_male = { model = "s_m_y_swat_01"}
 local deputy_male = { model = "s_m_y_ranger_01"}
 local chief_male = {model = "s_m_m_ciasec_01"}
 local santa = {model = "Santaclaus"}
@@ -93,55 +93,25 @@ cfg.cloakroom_types = {
     ["Male"] = emergency_male,
     ["Female"] = emergency_female
     },
-  ["Officer"] = {
-    _config = { permissions = {"Officer.cloakroom"} },
-    ["Officer"] = officer_male,
-	["Female"] = cop_female
-  },
-  ["Chief"] = {
-    _config = { permissions = {"Chief.cloakroom"} },
-    ["Chief"] = chief_male
-  },
-  ["Trooper"] = {
+  ["Agente"] = {
     _config = { permissions = {"Commander.cloakroom"} },
-    ["Trooper"] = hway_male
+    ["Agente"] = hway_male
   },
-  ["Lieutenant"] = {
+  ["Cabo"] = {
     _config = { permissions = {"Lieutenant.cloakroom"} },
-    ["Lieutenant"] = lieutenant_male
+    ["Cabo"] = lieutenant_male
   },
-  ["Bounty"] = {
-    _config = { permissions = {"Bounty.cloakroom"} },
-    ["Bounty"] = bounty_male 
-  },
-  ["Captain"] = {
-    _config = { permissions = {"Captain.cloakroom"} },
-    ["Captain"] = captain_male
-  },
-  ["Detective"] = {
-    _config = { permissions = {"Detective.cloakroom"} },
-    ["Detective"] = detective_male
-  },
-  ["Deputy"] = {
-    _config = { permissions = {"Deputy.cloakroom"} },
-    ["Deputy"] = deputy_male
-  },
-  ["Sergeant"] = {
+  ["Sargento"] = {
     _config = { permissions = {"Sergeant.cloakroom"} },
-    ["Sergeant"] = sergeant_male
+    ["Sargento"] = sergeant_male
   },
   ["UPS"] = {
     _config = { permissions = {"ups.cloakroom"} },
     ["Courier"] = ups_male
   },
-  ["SWAT"] = {
-    _config = { permissions = {"SWAT.cloakroom"} },
-    ["Male"] = fbi_male,
-  },
-  ["sheriff"] = {
+  ["Comisario"] = {
     _config = { permissions = {"sheriff.cloakroom"} },
-    ["Male"] = sheriff_male,
-    ["Female"] = sheriff_female
+    ["Comisario"] = sheriff_male
   }
 }
 
@@ -152,20 +122,20 @@ cfg.cloakrooms = {
   {"Bounty", 575.40698242188,-3121.94921875,18.768627166748},
   {"Commander", 459.01037597656,-992.32800292969,30.689575195313},
   {"Captain", 459.01037597656,-992.32800292969,30.689575195313},
-  {"Lieutenant", 459.01037597656,-992.32800292969,30.689575195313},
+  {"Cabo", 459.01037597656,-992.32800292969,30.689575195313},
   {"Detective", 459.01037597656,-992.32800292969,30.689575195313},
-  {"Sergeant", 459.01037597656,-992.32800292969,30.689575195313},
+  {"Sargento", 459.01037597656,-992.32800292969,30.689575195313},
   --{"police", 369.9228515625,-1607.12976074219,29.291934967041},
   {"police", 1848.2177734375,3689.5593261719,34.267040252686}, -- sandy shores
   {"police", -448.53857421875,6009.2690429688,31.716375350952}, -- paleto
   {"SWAT", 459.01037597656,-992.32800292969,30.689575195313}, 
-  {"sheriff", 459.01037597656,-992.32800292969,30.689575195313},
+  {"Comisario", 459.01037597656,-992.32800292969,30.689575195313},
   {"Deputy", 459.01037597656,-992.32800292969,30.689575195313},
   {"Deputy", 1849.7268066406,3689.9221191406,34.267040252686}, -- sandy shores
   {"Deputy", -447.44305419922,6007.9516601563,31.716375350952}, -- paleto
-  {"sheriff", 1849.7268066406,3689.9221191406,34.267040252686}, -- sandy shores
-  {"sheriff", -447.44305419922,6007.9516601563,31.716375350952}, -- paleto
-  {"Trooper", 459.01037597656,-992.32800292969,30.689575195313},
+  {"Comisario", 1849.7268066406,3689.9221191406,34.267040252686}, -- sandy shores
+  {"Comisario", -447.44305419922,6007.9516601563,31.716375350952}, -- paleto
+  {"Agente", 459.01037597656,-992.32800292969,30.689575195313},
   {"Lawyer",105.48087310791,-1088.82177734375,29.3024787902832},
   {"surgery",1849.7425,3686.5759,34.2670},----first spawn change skin
   {"surgery",75.3451766967773,-1392.86596679688,29.3761329650879},---skinsshops
