@@ -139,36 +139,60 @@ cfg.gunshop_types = {
   },
   ["policeloadout"] = {
     _config = {blipid=110,blipcolor=74, permissions = {"police.loadshop"}},
-    ["WEAPON_PETROLCAN"] = {"Petrol",0,0,""},
-    ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",0,0,""},
-	["WEAPON_FLAREGUN"] = {"Flare Gun",0,0,""},
-	["WEAPON_FLASHLIGHT"] = {"Linterna",0,0,""},
-    ["WEAPON_FLARE"] = {"Flare",0,0,""},
-    ["WEAPON_NIGHTSTICK"] = {"Porra",0,0,""},
-	["WEAPON_STUNGUN"] = {"Tazer",0,0,""},
-    ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",0,0,""}
+    ["WEAPON_FLASHLIGHT"] = {"Linterna",100,0,""},
+    ["WEAPON_NIGHTSTICK"] = {"Porra",300,0,""},
+	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
+    ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""}
   },
-  ["Cadet"] = {
-    _config = {blipid=110,blipcolor=74, permissions = {"Cadet.loadshop"}},
-    ["WEAPON_PETROLCAN"] = {"Petrol",0,0,""},
-    ["WEAPON_PUMPSHOTGUN"] = {"Pump Shotgun",0,0,""},
-  ["WEAPON_FLAREGUN"] = {"Flare Gun",0,0,""},
-  ["WEAPON_FLASHLIGHT"] = {"Flashlight",0,0,""},
-    ["WEAPON_FLARE"] = {"Flare",0,0,""},
-    ["WEAPON_NIGHTSTICK"] = {"Nighstick",0,0,""},
-  ["WEAPON_STUNGUN"] = {"Tazer",0,0,""}
+  ["Cabo"] = {
+    _config = {blipid=110,blipcolor=74, permissions = {"Cabo.loadshop"}},
+    ["WEAPON_FLASHLIGHT"] = {"Linterna",100,0,""},
+    ["WEAPON_NIGHTSTICK"] = {"Porra",300,0,""},
+	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
+    ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
+    ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""}
   },
-  ["SWAT"] = {
-    _config = {blipid=110,blipcolor=74, permissions = {"SWAT.loadshop"}},
-    ["WEAPON_SMOKEGRENADE"] = {"Smoke Grenade",0,0,""},
-    ["WEAPON_PETROLCAN"] = {"Petrol",0,0,""},
-    ["WEAPON_PUMPSHOTGUN"] = {"Pump Shotgun",0,0,""},
-    ["WEAPON_FLAREGUN"] = {"Flare Gun",0,0,""},
-    ["WEAPON_FLASHLIGHT"] = {"Flashlight",0,0,""},
-    ["WEAPON_FLARE"] = {"Flare",0,0,""},
-    ["WEAPON_NIGHTSTICK"] = {"Nighstick",0,0,""},
-    ["WEAPON_STUNGUN"] = {"Tazer",0,0,""},
-    ["WEAPON_COMBATPISTOL"] = {"Combat Pistol",0,0,""}
+  ["Cabo Primero"] = {
+    _config = {blipid=110,blipcolor=74, permissions = {"Cabo1.loadshop"}},
+    ["WEAPON_FLASHLIGHT"] = {"Linterna",100,0,""},
+    ["WEAPON_NIGHTSTICK"] = {"Porra",300,0,""},
+	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
+    ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
+    ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""} 
+  },
+  ["Sargento"] = { --Sargento
+    _config = {blipid=110,blipcolor=74, permissions = {"Sargento.loadshop"}},
+    ["WEAPON_FLASHLIGHT"] = {"Linterna",100,0,""},
+    ["WEAPON_NIGHTSTICK"] = {"Porra",300,0,""},
+	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
+    ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
+    ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""},
+    ["WEAPON_SMG"] = {"SMG",5000,5,""}
+  },
+  ["Sargento Primero"] = { --Sargento 1ero
+    _config = {blipid=110,blipcolor=74, permissions = {"Sargento1.loadshop"}},
+    ["WEAPON_FLASHLIGHT"] = {"Linterna",100,0,""},
+    ["WEAPON_NIGHTSTICK"] = {"Porra",300,0,""},
+	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
+    ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
+    ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""},
+    ["WEAPON_SMG"] = {"SMG",5000,5,""},
+    ["WEAPON_CARBINERIFLE"] = {"Carabina",8000,50,""}
+  },
+  ["Comisario"] = { --Comisario
+    _config = {blipid=110,blipcolor=74, permissions = {"Comisario.loadshop"}},
+    ["WEAPON_FLASHLIGHT"] = {"Linterna",100,0,""},
+    ["WEAPON_NIGHTSTICK"] = {"Porra",300,0,""},
+	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
+    ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
+    ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""},
+    ["WEAPON_SMG"] = {"Subfusil",4000,5,""},
+    ["WEAPON_CARBINERIFLE"] = {"Carabina",8000,50,""},
+    ["WEAPON_HEAVYSNIPER"] = {"Sniper Pesado",12000,120,""}
   },
  ["Mafia"] = {
 _config = {blipid=110,blipcolor=74, permissions = {"mafia.loadshop"}},
@@ -219,8 +243,11 @@ cfg.gunshops = {
   {"emsloadout", 1837.8341064453,3671.3837890625,34.276763916016}, -- sandy shores
   {"emsloadout", -246.91954040527,6330.349609375,32.42618560791}, -- paleto
   {"eastlossantos1", 844.299, -1033.26, 28.1949},
-  {"SWAT", 461.33551025391,-981.11071777344,30.689584732056},
-  {"Cadet", 461.33551025391,-981.11071777344,30.689584732056},
+  {"Cabo", 461.33551025391,-981.11071777344,30.689584732056},
+  {"Cabo Primero", 461.33551025391,-981.11071777344,30.689584732056},
+  {"Sargento", 461.33551025391,-981.11071777344,30.689584732056},
+  {"Sargento Primero", 461.33551025391,-981.11071777344,30.689584732056},
+  {"Comisario", 461.33551025391,-981.11071777344,30.689584732056},
   {"policeloadout", 461.33551025391,-981.11071777344,30.689584732056},--- main pd
   {"Bounty_Hunter", 563.62060546875,-3126.9626464844,18.768604278564},
   {"Mafia", 1397.0635986328,3604.9565429688,38.941886901855}, -- EXAMPLE , UPDATE IF YOU WANT

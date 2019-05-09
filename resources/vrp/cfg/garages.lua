@@ -211,22 +211,33 @@ cfg.garage_types = {
     ["gtr"] = {"Nissan GTR",1000000, ""}
   },
   
-  ["police"] = {
+  ["agente"] = {
     _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle"}},
-    ["sheriff"] = {"Chevrolet Amarok",1000000, ""},
-    ["polaventa"] = {"Lamborgini Aventador",1000000, ""},
-    ["police3"] = {"Ford Explorer",1000000, ""},
-    ["police"] = {"Ford Focus",1000000, ""},
-    ["policeb"] = {"Moto PFA",1000000, ""},
-    ["policet"] = {"Camioneta de transito",1000000, ""},
+    ["sheriff"] = {"Chevrolet Amarok",35000, ""},
+    ["police3"] = {"Ford Explorer",40000, ""},
   },
-  ["Cadet"] = {
-    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"Cadet.vehicle"}},
-    ["police7"] = {"police",0, "police"}
+  ["cabo"] = {
+    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle.cabo"}},
+    ["sheriff"] = {"Chevrolet Amarok",35000, ""},
+    ["police3"] = {"Ford Explorer",40000, ""},
+    ["policeb"] = {"Moto PFA",50000, ""},
   },
-  ["Bounty"] = {
-    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"Bounty.vehicle"}},
-    ["fbi"] = {"Unmarked",0, "police"}
+  ["sargento"] = {
+    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle.sargento"}},
+    ["sheriff"] = {"Chevrolet Amarok",35000, ""},
+    ["police3"] = {"Ford Explorer",40000, ""},
+    ["policeb"] = {"Moto PFA",50000, ""},
+    ["police"] = {"Ford Focus",70000, ""},
+    ["policet"] = {"Camioneta de transito",40000, ""},
+  },
+  ["comisario"] = {
+    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle.comisario"}},
+    ["sheriff"] = {"Chevrolet Amarok",35000, ""},
+    ["police3"] = {"Ford Explorer",40000, ""},
+    ["policeb"] = {"Moto PFA",50000, ""},
+    ["police"] = {"Ford Focus",70000, ""},
+    ["policet"] = {"Camioneta de transito",40000, ""},
+    ["polaventa"] = {"Lamborgini Aventador",500000, ""},
   },
   ["emergency"] = {
     _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.vehicle"}},
@@ -315,12 +326,15 @@ cfg.garages = {
   {"Mid Range",1181.6231689453,2650.830078125,37.821151733398},
   {"sportsclassics",112.275, 6619.83, 31.8154},
   {"Motorcycles",-205.789, -1308.02, 31.2916},
-  {"police",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
-  {"Cadet",451.2121887207,-1018.2822875977,28.495378494263}, --- cadet garage
-  {"police",477.99038696289,-1020.9154663086,28.011201858521},
+  {"agente",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
+  {"cabo",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
+  {"sargento",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
+  {"comisario",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
+  {"agente",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
+  {"cabo",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
+  {"sargento",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
+  {"comisario",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
   {"Bounty",512.07818603516,-3052.1579589844,6.0687308311462},  
-  {"police",1868.5435791016,3696.0295410156,33.5693359375},  -- sandy shores
-  {"police",-476.92425537109,6026.9951171875,31.340547561646},  -- paleto
   {"emergency",358.91650390625, -607.78515625, 28.6820983886719}, -- main
   {"emergency",1833.3223876953,3661.3088378906,33.875843048096}, -- sandy shores
   {"emergency",-255.98040771484,6346.1127929688,32.426189422607}, -- paleto
