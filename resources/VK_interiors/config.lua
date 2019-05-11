@@ -1,9 +1,8 @@
 INTERIORS = {
-    -- HOPITAL
-    [1] = {id = 1, x = 360.08847045898, y = -585.16223144531, z = 28.820465087891,  name = "Exit EMS", destination = {2}},
-	[2] = {id = 2, x = 251.32405090332, y = -1367.2664794922, z = 39.534370422363,  name = "Enter EMS", destination = {1}},
+    -- HOSPITAL
+    [1] = {id = 1, x = 294.83221435547, y = -1448.4013671875, z = 29.966623306274,  name = "Salir del Hospital", destination = {2}},
+	[2] = {id = 2, x = 251.32405090332, y = -1367.2664794922, z = 39.534370422363,  name = "Entrar al Hospital", destination = {1}},
     
-
 
     -- FIB
     [4] = {id = 4, x = 138.18788146973, y = -764.86633300781, z = 45.75199508667,  name = "Exit FBI", destination = {5}},

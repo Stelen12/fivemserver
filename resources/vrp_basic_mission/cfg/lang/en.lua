@@ -29,7 +29,7 @@ local lang = {
 	item = "- {2} {1}"
     },
   ups = {
-	title = "Get the parcels from the UPS center ( see map) and then deliver the parcels to me!",
+	title = "Consigue los paquetes de la Central de correo (ver mapa) y despues traemelos!",
 	item = "- {2} {1}"
 	},
   -- santa = {

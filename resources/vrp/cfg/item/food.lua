@@ -44,10 +44,10 @@ local function gen(ftype, vary_hunger, vary_thirst)
           if vary_thirst ~= 0 then vRP.varyThirst(user_id,vary_thirst) end
 
           if ftype == "drink" then
-            vRPclient.notify(player,{"~b~ Drinking "..name.."."})
+            vRPclient.notify(player,{"~b~ Tomando "..name.."."})
             play_drink(player)
           elseif ftype == "eat" then
-            vRPclient.notify(player,{"~o~ Eating "..name.."."})
+            vRPclient.notify(player,{"~o~ Comiendo "..name.."."})
             play_eat(player)
           end
 
@@ -64,27 +64,26 @@ end
 
 -- DRINKS --
 
-items["water"] = {"Water","", gen("drink",0,-25),0.5}
-items["milk"] = {"Milk","", gen("drink",0,-5),0.5}
-items["coffee"] = {"Coffee","", gen("drink",0,-10),0.2}
-items["tea"] = {"Tea","", gen("drink",0,-15),0.2}
-items["icetea"] = {"Ice-Tea","", gen("drink",0,-20), 0.5}
-items["orangejuice"] = {"Orange Juice","", gen("drink",0,-25),0.5}
-items["cocacola"] = {"Coca Cola","", gen("drink",0,-35),0.3}
-items["redbull"] = {"Red Bull","", gen("drink",0,-40),0.3}
-items["lemonade"] = {"Lemonade","", gen("drink",0,-45),0.3}
-items["vodka"] = {"Vodka","", gen("drink",15,-65),0.5}
+items["Agua"] = {"Agua","", gen("drink",0,-25),0.5}
+items["Leche"] = {"Leche","", gen("drink",0,-5),0.5}
+items["Cafe"] = {"Cafe","", gen("drink",0,-10),0.2}
+items["Coca Cola"] = {"Coca Cola","", gen("drink",0,-15),0.2}
+items["Manaos"] = {"Manaos","", gen("drink",0,-20), 0.5}
+items["Te Helado"] = {"Te Helado","", gen("drink",0,-25),0.5}
+items["Red Bull"] = {"Red Bull","", gen("drink",0,-35),0.3}
+items["Speed"] = {"Speed","", gen("drink",0,-40),0.3}
+items["Fernandito"] = {"Lemonade","", gen("drink",0,-45),0.3}
+items["Vodka"] = {"Vodka","", gen("drink",15,-65),0.5}
 
 --FOOD
 
 -- create Breed item
-items["bread"] = {"Bread","", gen("eat",-10,0),0.5}
-items["donut"] = {"Donut","", gen("eat",-15,0),0.2}
-items["tacos"] = {"Tacos","", gen("eat",-20,0),0.2}
-items["sandwich"] = {"Sandwich","A tasty snack.", gen("eat",-25,0),0.5}
-items["kebab"] = {"Kebab","", gen("eat",-45,0),0.85}
-items["pdonut"] = {"Premium Donut","", gen("eat",-25,0),0.5}
-items["catfish"] = {"Catfish","", gen("eat",10,15),0.3}
-items["bass"] = {"Bass","", gen("eat",10,15),0.3}
+items["Pan"] = {"Pan","", gen("eat",-10,0),0.5}
+items["Pitusas"] = {"Pitusas","", gen("eat",-15,0),0.2}
+items["Sanguche de milanesa"] = {"Sanguche de milanesa","", gen("eat",-20,0),0.2}
+items["Sanguche de bondiola"] = {"Sanguche de bondiola","", gen("eat",-45,0),0.85}
+items["Papas Fritas"] = {"Papas Fritas","", gen("eat",-25,0),0.5}
+items["Choripan"] = {"Choripan","", gen("eat",10,15),0.3}
+items["Lechon"] = {"Lechon","", gen("eat",10,15),0.3}
 
 return items

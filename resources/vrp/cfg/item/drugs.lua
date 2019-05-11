@@ -19,7 +19,7 @@ pills_choices["Take"] = {function(player,choice)
         if not in_coma then
           if vRP.tryGetInventoryItem(user_id,"pills",1) then
             vRPclient.varyHealth(player,{25})
-            vRPclient.notify(player,{"~g~ Taking pills."})
+            vRPclient.notify(player,{"~g~ Agarrando pastillas."})
             play_drink(player)
             vRP.closeMenu(player)
           end
@@ -44,7 +44,7 @@ smoke_choices["Take"] = {function(player,choice)
   if user_id ~= nil then
     if vRP.tryGetInventoryItem(user_id,"weed",1) then
 	  vRP.varyHunger(user_id,(20))
-      vRPclient.notify(player,{"~g~ smoking weed."})
+      vRPclient.notify(player,{"~g~ Fumando Marihuana."})
       play_smoke(player)
       vRP.closeMenu(player)
     end
@@ -67,7 +67,7 @@ smell_choices["Take"] = {function(player,choice)
   if user_id ~= nil then
     if vRP.tryGetInventoryItem(user_id,"cocaine",1) then
 	  vRP.varyThirst(user_id,(20))
-      vRPclient.notify(player,{"~g~ smell cocaine."})
+      vRPclient.notify(player,{"~g~ Dandole un tirito."})
       play_smell(player)
       vRP.closeMenu(player)
     end
@@ -90,7 +90,7 @@ lsd_choices["Take"] = {function(player,choice)
   if user_id ~= nil then
     if vRP.tryGetInventoryItem(user_id,"lsd",1) then
 	  vRP.varyThirst(user_id,(20))
-      vRPclient.notify(player,{"~g~ Taking lsd."})
+      vRPclient.notify(player,{"~g~ Tomando LSD."})
       play_lsd(player)
       vRP.closeMenu(player)
     end

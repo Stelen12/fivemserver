@@ -140,8 +140,8 @@ cfg.delivery = {
   ["mission.delivery.food"] = {
     positions = common_delivery_positions,
     items = {
-      ["tacos"] = {0,8,500},
-      ["water"] = {0,8,350}
+      ["Agua"] = {0,8,500},
+      ["Pitusas"] = {0,8,350}
     }
   }
 }
@@ -163,8 +163,8 @@ cfg.drugseller = {
     positions = common_drugseller_positions,
     items = {
       ["weed"] = {1,10,500},
-	  ["cocaine"] = {1,7,600},
-	  ["lsd"] = {1,5,700}
+      ["cocaine"] = {1,7,600},
+      ["lsd"] = {1,5,700}
     }
   }
 }
@@ -183,7 +183,7 @@ cfg.fisherman = {
     positions = common_fisher_positions,
     items = {
       ["bass"] = {1,8,200},
-	  ["catfish"] = {1,8,200}
+	    ["catfish"] = {1,8,200}
     }
   }
 }
@@ -201,7 +201,7 @@ cfg.weapons_smuggler = {
     positions = common_smuggler_positions,
     items = {
       ["AK47"] = {1,5,350},
-	  ["M4A1"] = {1,5,350}
+	    ["M4A1"] = {1,5,350}
     }
   }
 }
@@ -285,7 +285,7 @@ cfg.ups = {
   ["mission.delivery.parcels"] = {
     positions = common_ups_positions,
     items = {
-      ["parcels"] = {1,7,450}
+      ["paquetes"] = {1,7,450}
     }
   }
 }

@@ -258,17 +258,31 @@ cfg.garage_types = {
     ["policet"] = {"Camioneta de transito",40000, ""},
     ["polaventa"] = {"Lamborgini Aventador",500000, ""},
   },
-  ["emergency"] = {
-    _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.vehicle"}},
-    ["Ambulance"] = {"Ambulance",0, "emergency"},
-	["hwaycar4"] = {"Tahoe",0, "emergency"},
-	["firetruk"] = {"firetruk",0, "emergency"}
-  },
   ["Police Helicopters"] = {
-    _config = {vtype="car",blipid=43,blipcolor=38,radius=5.1,permissions={"police.vehicle"}},
-    ["polmav"] = {"Maverick",0, "emergency"}
+    _config = {vtype="car",blipid=43,blipcolor=38,radius=5.1,permissions={"police.helicopter"}},
+    ["polmav"] = {"Helicoperto Policial",500000, "emergency"}
   },
-   ["EMS Helicopters"] = {
+  ["aspirante"] = {
+    _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.vehicle"}},
+    ["ambulance"] = {"Ambulancia",5000, ""}
+  },
+  ["doctor"] = {
+    _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.doctor"}},
+    ["ambulance"] = {"Ambulancia",5000, ""}
+  },
+  ["cirujano"] = {
+    _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.cirujano"}},
+    ["ambulance"] = {"Ambulancia",5000, ""}
+  },
+  ["coordinador"] = {
+    _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.coordinador"}},
+    ["ambulance"] = {"Ambulancia",5000, ""}
+  },
+  ["jefe de zona"] = {
+    _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.jefe"}},
+    ["ambulance"] = {"Ambulancia",5000, ""}
+  },
+  ["EMS Helicopters"] = {
     _config = {vtype="car",blipid=43,blipcolor=1,radius=5.1,permissions={"emergency.vehicle"}},
     ["supervolito2"] = {"EMS",0, "emergency"}
   },
@@ -356,9 +370,11 @@ cfg.garages = {
   {"sargento",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
   {"comisario",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
   {"Bounty",512.07818603516,-3052.1579589844,6.0687308311462},  
-  {"emergency",358.91650390625, -607.78515625, 28.6820983886719}, -- main
-  {"emergency",1833.3223876953,3661.3088378906,33.875843048096}, -- sandy shores
-  {"emergency",-255.98040771484,6346.1127929688,32.426189422607}, -- paleto
+  {"aspirante",284.19772338867,-1419.4770507813,29.626312255859}, -- main
+  {"doctor",284.19772338867,-1419.4770507813,29.626312255859}, -- main
+  {"cirujano",284.19772338867,-1419.4770507813,29.626312255859}, -- main
+  {"coordinador",284.19772338867,-1419.4770507813,29.626312255859}, -- main
+  {"jefe de zona",284.19772338867,-1419.4770507813,29.626312255859}, -- main
   {"uber",907.38049316406,-175.86546325684,74.130157470703}, -- jobs garage
   {"Lawyer",-1900.7344970703,-560.89245605469,11.802397727966},-- jobs garage
   {"delivery",964.514770507813,-1020.13879394531,40.8475074768066},   -- jobs garage
@@ -393,8 +409,6 @@ cfg.garages = {
   {"House Garage",34.516819000244,6604.0004882813,32.449085235596},
   {"House Garage",-555.20428466797,664.56500244141,145.16401672363},
   {"Police Helicopters",449.30340576172,-981.24963378906,43.69165802002}, -- Main PD
-  {"Police Helicopters",1770.2171630859,3239.5561523438,42.13171005249}, -- Sandy Shores
-  {"Police Helicopters",-475.24264526367,5988.7353515625,31.336685180664}, -- Paleto Bay
   {"EMS Helicopters",449.30340576172,-981.24963378906,43.69165802002}, -- Main PD
   {"EMS Helicopters",1770.2171630859,3239.5561523438,42.13171005249}, -- Sandy Shores
   {"EMS Helicopters",-475.24264526367,5988.7353515625,31.336685180664}, -- Paleto Bay  

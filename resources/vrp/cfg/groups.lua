@@ -137,95 +137,9 @@ cfg.groups = {
 	"mission.weapons.smuggler",
     "smuggler.service"
     },
-  ["Police Officer"] = {
-    _config = { 
-      gtype = "job",
-      onjoin = function(player) vRPclient.setCop(player,{true}) end,
-      onspawn = function(player) vRPclient.setCop(player,{true}) end,
-      onleave = function(player) vRPclient.setCop(player,{true}) end
-    },
-    "Officer.cloakroom",
-	"highway.cloakroom",
-    "police.pc",
-    --"police.handcuff",
-    "police.putinveh",
-    "police.getoutveh",
-	"police.drag",
-	"police.easy_cuff",
-	"police.easy_fine",
-	"police.easy_jail",
-	"police.easy_unjail",
-	"police.spikes",
-	"police.menu",
-    "police.check",
-	"toggle.service",
-	"police.freeze",
-    "police.service",
-    "police.wanted",
-    "police.seize.weapons",
-    "police.seize.items",
-    --"police.jail",
-    --"police.fine",
-    "police.announce",
-   -- "-police.store_weapons",
-    "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"police.loadshop",
-	"cop.whitelisted",
-	"emergency.market",
-	"emergency.revive",
-	"emergency.shop",
-	--"player.list",
-	"police.paycheck",
-	"police.mission",
-	"player.blips",
-	"police.menu_interaction"
-  },
-  ["Police Detective"] = {  
-    _config = { 
-      gtype = "job",
-      onjoin = function(player) vRPclient.setCop(player,{true}) end,
-      onspawn = function(player) vRPclient.setCop(player,{true}) end,
-      onleave = function(player) vRPclient.setCop(player,{true}) end
-    },
-    "Detective.cloakroom",
-	"highway.cloakroom",
-    "police.pc",
-    --"police.handcuff",
-    "police.putinveh",
-    "police.getoutveh",
-    "police.service",
-    "police.wanted",
-    "police.seize.weapons",
-    "police.seize.items",
-    --"police.jail",
-    --"police.fine",
-	"police.drag",
-	"police.easy_cuff",
-	"police.easy_fine",
-	"police.easy_jail",
-	"police.easy_unjail",
-	"police.spikes",
-	"police.menu",
-    "police.check",
-	"toggle.service",
-	"police.freeze",
-    "police.announce",
-   -- "-police.store_weapons",
-    "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"police.loadshop",
-	"cop.whitelisted",
-	"emergency.market",
-	"emergency.revive",
-	"emergency.shop",
-	--"player.list",
-	"Detective.paycheck",
-	"police.menu_interaction",
-	"player.blips",
-	"police.mission"
-  },
-  ["EMS Chief"] = {
+  ["Aspirante"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are a EMS Chief, salary : $5000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Aspirante, salario : $5000."}) end
 	},
     "emergency.revive",
 	--"police.wanted",
@@ -243,9 +157,9 @@ cfg.groups = {
 	"player.blips",
 	"ems.mission"
   },
-  ["EMS Paramedic"] = {
+  ["Doctor"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are a EMS Paramedic, salary : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Doctor, salario : $2000."}) end
 	},
     "emergency.revive",
 	--"police.wanted",
@@ -253,7 +167,7 @@ cfg.groups = {
     "emergency.service",
 	"emscheck.revive",
 	"emergency.cloakroom",
-	"emergency.vehicle",
+	"emergency.doctor",
 	"emergency.market",
 	"ems.whitelisted",
 	"ems.loadshop",
@@ -263,9 +177,9 @@ cfg.groups = {
 	"player.blips",
 	"ems.mission"
   },
-  ["EMS Lieutenant"] = {
+  ["Cirujano"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are a EMS Lieutenant, salary : $3000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Cirujano, salario : $3000."}) end
 	},
     "emergency.revive",
 	"police.pc",
@@ -273,7 +187,7 @@ cfg.groups = {
     "emergency.shop",
     "emergency.service",
 	"emergency.cloakroom",
-	"emergency.vehicle",
+	"emergency.cirujano",
 	"emergency.market",
 	"emscheck.revive",
 	"ems.whitelisted",
@@ -284,9 +198,9 @@ cfg.groups = {
 	"player.blips",
 	"ems.mission"
   },
-  ["EMS Search and Rescue"] = {
+  ["Coordinador"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are a EMS Search and Rescue, salary : $2500."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Coordinador, salario : $2500."}) end
 	},
     "emergency.revive",
 	--"police.wanted",
@@ -294,7 +208,7 @@ cfg.groups = {
     "emergency.service",
 	"emergency.cloakroom",
 	"emscheck.revive",
-	"emergency.vehicle",
+	"emergency.coordinador",
 	"emergency.market",
 	"ems.whitelisted",
 	"ems.loadshop",
@@ -304,7 +218,27 @@ cfg.groups = {
 	"player.blips",
 	"ems.mission"
   },
-  ["Mechanic"] = {
+  ["Jefe de zona"] = {
+    _config = { gtype = "job",
+	onspawn = function(player) vRPclient.notify(player,{"Sos Jefe de zona, salario : $2500."}) end
+	},
+    "emergency.revive",
+	--"police.wanted",
+    "emergency.shop",
+    "emergency.service",
+	"emergency.cloakroom",
+	"emscheck.revive",
+	"emergency.jefe",
+	"emergency.market",
+	"ems.whitelisted",
+	"ems.loadshop",
+	--"player.list",
+	"police.menu_interaction",
+	"emsSearchRescue.paycheck",
+	"player.blips",
+	"ems.mission"
+  },
+  ["Mecanico"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
 	},
@@ -329,19 +263,19 @@ cfg.groups = {
 	onspawn = function(player) vRPclient.notify(player,{"You are UBER, PRESS DEL TO START MISSIONS. Salary : $2000."}) end
 	},
     "uber.service",
-	"uber.vehicle",
-	"uber.mission",
-	"uber.paycheck"
+    "uber.vehicle",
+    "uber.mission",
+    "uber.paycheck"
   },
   ["UPS"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are a Courier, Salary : $2000."}) end
+	  onspawn = function(player) vRPclient.notify(player,{"Sos un empleado del correo, Salario: $2000."}) end
 	},
     "ups.cloakroom",
-	"harvest.parcels",
-	"ups.vehicle",
-	"mission.delivery.parcels",
-	"ups.paycheck"
+    "harvest.parcels",
+    "ups.vehicle",
+    "mission.delivery.parcels",
+    "ups.paycheck"
   },
  -- ["Gunrunning"] = {
    -- _config = { gtype = "job",
@@ -356,7 +290,7 @@ cfg.groups = {
   },
   ["Delivery"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos un delivery, Salario : $2000."}) end
+	  onspawn = function(player) vRPclient.notify(player,{"Sos un delivery, Salario : $2000."}) end
 	},
 	"mission.delivery.food",
 	"delivery.vehicle",
@@ -603,6 +537,7 @@ cfg.groups = {
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
   "police.vehicle.sargento",
+  "police.helicopter",
   "Sargento1.loadshop",
 	"cop.whitelisted",
 	"Sergeant.paycheck",
@@ -641,6 +576,7 @@ cfg.groups = {
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
   "police.vehicle.comisario",
+  "police.helicopter",
   "Comisario.loadshop",
 	"cop.whitelisted",
 	"sheriff.paycheck",
@@ -794,13 +730,12 @@ cfg.selectors = {
   ["Job Selector"] = {
     _config = {x = -261.40533447266, y = -965.15747070313, z = 31.22411537170, blipid = 351, blipcolor = 47},
     "UBER",
-    "Mechanic",
-	"Delivery",
-	"Bankdriver",
-	"UPS",
-	"Fisher",
-	"Medical Transport",
-    "Unemployed"
+    "Delivery",
+    "Bankdriver",
+    "UPS",
+    "Fisher",
+    "Medical Transport",
+      "Unemployed"
   },
   ["Emergency job"] = { -- Spawn Hospital
     _config = {x =  249.50639343262, y = -1375.0694580078, z = 39.534378051758, blipid = 351, blipcolor = 3, permissions = {"ems.whitelisted"} },

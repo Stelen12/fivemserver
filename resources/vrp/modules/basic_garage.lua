@@ -93,54 +93,56 @@ for group,vehicles in pairs(vehicle_groups) do
     end
   end,lang.garage.owned.description()}
 
-  menu[lang.garage.buy.title()] = {function(player,choice)
-    local user_id = vRP.getUserId(player)
-    if user_id ~= nil then
+  if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona'  then --Verificando garage
+    menu[lang.garage.buy.title()] = {function(player,choice)
+      local user_id = vRP.getUserId(player)
+      if user_id ~= nil then
 
-      -- build nested menu
-      local kitems = {}
-      local submenu = {name=lang.garage.title({lang.garage.buy.title()}), css={top="75px",header_color="rgba(255,125,0,0.75)"}}
-      submenu.onclose = function()
-        vRP.openMenu(player,menu)
-      end
+        -- build nested menu
+        local kitems = {}
+        local submenu = {name=lang.garage.title({lang.garage.buy.title()}), css={top="75px",header_color="rgba(255,125,0,0.75)"}}
+        submenu.onclose = function()
+          vRP.openMenu(player,menu)
+        end
 
-      local choose = function(player, choice)
-        local vname = kitems[choice]
-        if vname then
-          -- buy vehicle
-          local vehicle = vehicles[vname]
-          if vehicle and vRP.tryPayment(user_id,vehicle[2]) then
-	    vRP.getUserIdentity(user_id, function(identity)					
-        TriggerEvent('veh_SR:CheckMoneyForBasicVeh', user_id, vname, vehicle[2] ,veh_type)
-	    end)
+        local choose = function(player, choice)
+          local vname = kitems[choice]
+          if vname then
+            -- buy vehicle
+            local vehicle = vehicles[vname]
+            if vehicle and vRP.tryPayment(user_id,vehicle[2]) then
+        vRP.getUserIdentity(user_id, function(identity)					
+          TriggerEvent('veh_SR:CheckMoneyForBasicVeh', user_id, vname, vehicle[2] ,veh_type)
+        end)
 
-            TriggerEvent('veh_SR:CheckMoneyForBasicVeh', user_id, vname, vehicle[2] ,veh_type)
-            vRP.closeMenu(player)
-          else
-            vRPclient.notify(player,{lang.money.not_enough()})
+              TriggerEvent('veh_SR:CheckMoneyForBasicVeh', user_id, vname, vehicle[2] ,veh_type)
+              vRP.closeMenu(player)
+            else
+              vRPclient.notify(player,{lang.money.not_enough()})
+            end
           end
         end
-      end
-      
-      -- get player owned vehicles (indexed by vehicle type name in lower case)
-      MySQL.query("vRP/get_vehicles", {user_id = user_id}, function(_pvehicles, affected)
-        local pvehicles = {}
-        for k,v in pairs(_pvehicles) do
-          pvehicles[string.lower(v.vehicle)] = true
-        end
-
-        -- for each existing vehicle in the garage group
-        for k,v in pairs(vehicles) do
-          if k ~= "_config" and pvehicles[string.lower(k)] == nil then -- not already owned
-            submenu[v[1]] = {choose,lang.garage.buy.info({v[2],v[3]})}
-            kitems[v[1]] = k
+        
+        -- get player owned vehicles (indexed by vehicle type name in lower case)
+        MySQL.query("vRP/get_vehicles", {user_id = user_id}, function(_pvehicles, affected)
+          local pvehicles = {}
+          for k,v in pairs(_pvehicles) do
+            pvehicles[string.lower(v.vehicle)] = true
           end
-        end
 
-        vRP.openMenu(player,submenu)
-      end)
-    end
-  end,lang.garage.buy.description()}
+          -- for each existing vehicle in the garage group
+          for k,v in pairs(vehicles) do
+            if k ~= "_config" and pvehicles[string.lower(k)] == nil then -- not already owned
+              submenu[v[1]] = {choose,lang.garage.buy.info({v[2],v[3]})}
+              kitems[v[1]] = k
+            end
+          end
+
+          vRP.openMenu(player,submenu)
+        end)
+      end
+    end,lang.garage.buy.description()}
+  end
 
   menu[lang.garage.sell.title()] = {function(player,choice)
     local user_id = vRP.getUserId(player)
@@ -186,13 +188,15 @@ for group,vehicles in pairs(vehicle_groups) do
           pvehicles[string.lower(v.vehicle)] = true
         end
 
-        -- for each existing vehicle in the garage group
-        for k,v in pairs(pvehicles) do
-          local vehicle = vehicles[k]
-          if vehicle then -- not already owned
-            local price = math.ceil((vehicle[2]*cfg.sell_factor)*1)
-            submenu[vehicle[1]] = {choose,lang.garage.buy.info({price,vehicle[3]})}
-            kitems[vehicle[1]] = k
+        if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona'  then --Verificando garage
+          -- for each existing vehicle in the garage group
+          for k,v in pairs(pvehicles) do
+            local vehicle = vehicles[k]
+            if vehicle then -- not already owned
+              local price = math.ceil((vehicle[2]*cfg.sell_factor)*1)
+              submenu[vehicle[1]] = {choose,lang.garage.buy.info({price,vehicle[3]})}
+              kitems[vehicle[1]] = k
+            end
           end
         end
 
@@ -249,12 +253,14 @@ for group,vehicles in pairs(vehicle_groups) do
           pvehicles[string.lower(k)] = true
         end
 
-        -- for each existing vehicle in the garage group
-        for k,v in pairs(vehicles) do
-          if k ~= "_config" and pvehicles[string.lower(k)] == nil then -- not already owned
-            local price = math.ceil((v[2]*cfg.rent_factor)*1)
-            submenu[v[1]] = {choose,lang.garage.buy.info({price,v[3]})}
-            kitems[v[1]] = k
+        if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona'  then --Verificando garage
+          -- for each existing vehicle in the garage group
+          for k,v in pairs(vehicles) do
+            if k ~= "_config" and pvehicles[string.lower(k)] == nil then -- not already owned
+              local price = math.ceil((v[2]*cfg.rent_factor)*1)
+              submenu[v[1]] = {choose,lang.garage.buy.info({price,v[3]})}
+              kitems[v[1]] = k
+            end
           end
         end
 

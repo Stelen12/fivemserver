@@ -7,7 +7,6 @@ local cfg = {}
 local surgery_male = { model = "mp_m_freemode_01" }
 local surgery_female = { model = "mp_f_freemode_01" }
 local emergency_male = { model = "s_m_m_paramedic_01" }
-local emergency_female = { model = "s_f_y_paramedic_01" }
 local fbi_male = { model = "s_m_y_swat_01" }
 local sheriff_male = { model = "s_m_y_sheriff_01"}
 local sheriff_female = { model = "s_m_y_sheriff_01"}
@@ -90,8 +89,7 @@ cfg.cloakroom_types = {
     -- },
    ["emergency"] = {
     _config = { permissions = {"emergency.cloakroom"} },
-    ["Male"] = emergency_male,
-    ["Female"] = emergency_female
+    ["SAME"] = emergency_male,
     },
   ["Agente"] = {
     _config = { permissions = {"Commander.cloakroom"} },
