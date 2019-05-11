@@ -111,10 +111,10 @@ for group,vehicles in pairs(vehicle_groups) do
           local vehicle = vehicles[vname]
           if vehicle and vRP.tryPayment(user_id,vehicle[2]) then
 	    vRP.getUserIdentity(user_id, function(identity)					
-            	MySQL.execute("vRP/add_vehicle", {user_id = user_id, vehicle = vname, registration = "P "..identity.registration})
+        TriggerEvent('veh_SR:CheckMoneyForBasicVeh', user_id, vname, vehicle[2] ,veh_type)
 	    end)
 
-            vRPclient.notify(player,{lang.money.paid({vehicle[2]})})
+            TriggerEvent('veh_SR:CheckMoneyForBasicVeh', user_id, vname, vehicle[2] ,veh_type)
             vRP.closeMenu(player)
           else
             vRPclient.notify(player,{lang.money.not_enough()})

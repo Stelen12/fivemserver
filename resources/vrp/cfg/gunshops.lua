@@ -159,7 +159,7 @@ cfg.gunshop_types = {
 	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
     ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
     ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
-    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""} 
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,0,""} 
   },
   ["Sargento"] = { --Sargento
     _config = {blipid=110,blipcolor=74, permissions = {"Sargento.loadshop"}},
@@ -168,7 +168,7 @@ cfg.gunshop_types = {
 	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
     ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
     ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
-    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""},
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,0,""},
     ["WEAPON_SMG"] = {"SMG",5000,5,""}
   },
   ["Sargento Primero"] = { --Sargento 1ero
@@ -178,7 +178,7 @@ cfg.gunshop_types = {
 	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
     ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
     ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
-    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""},
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,0,""},
     ["WEAPON_SMG"] = {"SMG",5000,5,""},
     ["WEAPON_CARBINERIFLE"] = {"Carabina",8000,50,""}
   },
@@ -189,7 +189,7 @@ cfg.gunshop_types = {
 	  ["WEAPON_STUNGUN"] = {"Tazer",400,0,""},
     ["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",700,20,""},
     ["WEAPON_PUMPSHOTGUN"] = {"Escopeta",1200,30,""},
-    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,2000,""},
+    ["WEAPON_BZGAS"] = {"Gas Lacrimogeno",2000,0,""},
     ["WEAPON_SMG"] = {"Subfusil",4000,5,""},
     ["WEAPON_CARBINERIFLE"] = {"Carabina",8000,50,""},
     ["WEAPON_HEAVYSNIPER"] = {"Sniper Pesado",12000,120,""}

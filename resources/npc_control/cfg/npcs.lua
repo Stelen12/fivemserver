@@ -1,8 +1,8 @@
 cfg = {}
 
 cfg.density = {
-	peds = 20,
-	vehicles = 35
+	peds = 100,
+	vehicles = 100
 }
 
 cfg.peds = { -- these peds wont show up anywhere, they will be removed and their vehicles deleted

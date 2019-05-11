@@ -169,7 +169,6 @@ cfg.groups = {
     "police.announce",
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"police.vehicle",
 	"police.loadshop",
 	"cop.whitelisted",
 	"emergency.market",
@@ -213,7 +212,6 @@ cfg.groups = {
     "police.announce",
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"police.vehicle",
 	"police.loadshop",
 	"cop.whitelisted",
 	"emergency.market",
@@ -230,7 +228,6 @@ cfg.groups = {
 	onspawn = function(player) vRPclient.notify(player,{"You are a EMS Chief, salary : $5000."}) end
 	},
     "emergency.revive",
-	"police.pc",
 	--"police.wanted",
     "emergency.shop",
     "emergency.service",
@@ -251,7 +248,6 @@ cfg.groups = {
 	onspawn = function(player) vRPclient.notify(player,{"You are a EMS Paramedic, salary : $2000."}) end
 	},
     "emergency.revive",
-	"police.pc",
 	--"police.wanted",
     "emergency.shop",
     "emergency.service",
@@ -293,7 +289,6 @@ cfg.groups = {
 	onspawn = function(player) vRPclient.notify(player,{"You are a EMS Search and Rescue, salary : $2500."}) end
 	},
     "emergency.revive",
-	"police.pc",
 	--"police.wanted",
     "emergency.shop",
     "emergency.service",
@@ -494,7 +489,6 @@ cfg.groups = {
     "police.announce",
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-  "police.vehicle",
   "police.vehicle.cabo",
   "Cabo.loadshop",
 	"cop.whitelisted",
@@ -532,7 +526,6 @@ cfg.groups = {
     "police.announce",
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-  "police.vehicle",
   "police.vehicle.cabo",
   "Cabo1.loadshop",
   "SWAT.loadshop",
@@ -571,7 +564,6 @@ cfg.groups = {
     "police.announce",
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-  "police.vehicle",
   "police.vehicle.sargento",
   "Sargento.loadshop",
   "Sargento.loadshop",
@@ -610,7 +602,6 @@ cfg.groups = {
     "police.announce",
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-  "police.vehicle",
   "police.vehicle.sargento",
   "Sargento1.loadshop",
 	"cop.whitelisted",
@@ -626,6 +617,7 @@ cfg.groups = {
 	},
 	"sheriff.cloakroom",
     "police.pc",
+    "boss_lspd.pc",
     --"police.handcuff",
     "police.putinveh",
     "police.getoutveh",
@@ -648,7 +640,6 @@ cfg.groups = {
     "police.announce",
    -- "-police.store_weapons",
     "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-  "police.vehicle",
   "police.vehicle.comisario",
   "Comisario.loadshop",
 	"cop.whitelisted",

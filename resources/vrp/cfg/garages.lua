@@ -28,7 +28,7 @@ cfg.garage_types = {
     ["banshee"] = {"Banshee",105000, ""},
     ["banshee2"] = {"Banshee 900R",120000, ""},
     ["carbonizzare"] = {"Carbonizzare",110000, ""},
-	["chantom"] = {"Chantom Semi",110000, ""},
+	  ["chantom"] = {"Chantom Semi",110000, ""},
     ["cognoscenti2"] = {"Cognoscenti(Armored)",80000, ""},
     ["cogcabrio"] = {"Cognoscenti Cabrio",77000, ""},
     ["comet2"] = {"Comet",100000, ""},
@@ -57,7 +57,8 @@ cfg.garage_types = {
     ["f620"] = {"Lexus 350",1000000, ""},
     ["p1"] = {"McLauren P1",1000000, ""},
     ["r8ppi"] = {"Audi R8",1000000, ""},
-    ["r8ppi"] = {"Audi R8",1000000, ""},
+    ["bati"] = {"Ducati",1000000, ""},
+    ["aaq4"] = {"Audi A4",500000, ""},
     ["sesto"] = {"Ferrari Sesto",1000000, ""},
     ["prairie"] = {"Volkswagen Scirocco",1000000, ""},
   },
@@ -205,7 +206,8 @@ cfg.garage_types = {
     ["f620"] = {"Lexus 350",1000000, ""},
     ["p1"] = {"McLauren P1",1000000, ""},
     ["r8ppi"] = {"Audi R8",1000000, ""},
-    ["r8ppi"] = {"Audi R8",1000000, ""},
+    ["bati"] = {"Ducati",1000000, ""},
+    ["aaq4"] = {"Audi A4",500000, ""},
     ["sesto"] = {"Ferrari Sesto",1000000, ""},
     ["prairie"] = {"Volkswagen Scirocco",1000000, ""},
     ["gtr"] = {"Nissan GTR",1000000, ""}
@@ -222,11 +224,27 @@ cfg.garage_types = {
     ["police3"] = {"Ford Explorer",40000, ""},
     ["policeb"] = {"Moto PFA",50000, ""},
   },
+  ["cabo primero"] = {
+    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle.cabo"}},
+    ["sheriff"] = {"Chevrolet Amarok",35000, ""},
+    ["police3"] = {"Ford Explorer",40000, ""},
+    ["policeb"] = {"Moto PFA",50000, ""},
+    ["police2"] = {"Citroen C4",50000, ""},
+  },
   ["sargento"] = {
     _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle.sargento"}},
     ["sheriff"] = {"Chevrolet Amarok",35000, ""},
     ["police3"] = {"Ford Explorer",40000, ""},
     ["policeb"] = {"Moto PFA",50000, ""},
+    ["police2"] = {"Citroen C4",50000, ""},
+    ["police"] = {"Ford Focus",70000, ""},
+  },
+  ["sargento primero"] = {
+    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle.sargento"}},
+    ["sheriff"] = {"Chevrolet Amarok",35000, ""},
+    ["police3"] = {"Ford Explorer",40000, ""},
+    ["policeb"] = {"Moto PFA",50000, ""},
+    ["police2"] = {"Citroen C4",50000, ""},
     ["police"] = {"Ford Focus",70000, ""},
     ["policet"] = {"Camioneta de transito",40000, ""},
   },
@@ -235,6 +253,7 @@ cfg.garage_types = {
     ["sheriff"] = {"Chevrolet Amarok",35000, ""},
     ["police3"] = {"Ford Explorer",40000, ""},
     ["policeb"] = {"Moto PFA",50000, ""},
+    ["police2"] = {"Citroen C4",50000, ""},
     ["police"] = {"Ford Focus",70000, ""},
     ["policet"] = {"Camioneta de transito",40000, ""},
     ["polaventa"] = {"Lamborgini Aventador",500000, ""},
@@ -328,7 +347,9 @@ cfg.garages = {
   {"Motorcycles",-205.789, -1308.02, 31.2916},
   {"agente",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
   {"cabo",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
+  {"cabo primero",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
   {"sargento",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
+  {"sargento primero",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
   {"comisario",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
   {"agente",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
   {"cabo",477.99038696289,-1020.9154663086,28.011201858521},-- parte de atras
