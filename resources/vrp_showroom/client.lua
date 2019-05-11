@@ -103,8 +103,9 @@ local vehshop = {
 			title = "Autos",
 			name = "Autos",
 			buttons = {
-				{name = "Audi", description = ''},
-				{name = "BMW", description = ''},
+				{name = "audi", description = ''},
+				{name = "bmw", description = ''},
+				{name = "Volkswagen", description = ''},
 			}
 		},
 		["Audi"] = {
@@ -119,6 +120,13 @@ local vehshop = {
 			name = "BMW",
 			buttons = {
 				{name = "I8", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "i8"},
+			}
+		},
+		["Volkswagen"] = {
+			title = "Volkswagen",
+			name = "Volkswagen",
+			buttons = {
+				{name = "Bora", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "elegy"},
 			}
 		},
 		-------------------Motos----------------------
@@ -552,7 +560,7 @@ Citizen.CreateThread(function()
 					end
 					vehSR_drawMenuButton(button,vehshop.menu.x,y,selected)
 					if button.costs ~= nil then
-						if vehshop.currentmenu == "Audi" or vehshop.currentmenu == "BMW" or vehshop.currentmenu == "Ducati"  then
+						if vehshop.currentmenu == "Audi" or vehshop.currentmenu == "BMW" or vehshop.currentmenu == "Ducati" or vehshop.currentmenu == "Volkswagen"  then
 							vehSR_drawMenuRight("$"..button.costs,vehshop.menu.x,y,selected)
 							carPrice = "$"..button.costs
 						else
@@ -560,7 +568,7 @@ Citizen.CreateThread(function()
 						end
 					end
 					y = y + 0.04
-					if vehshop.currentmenu == "Audi" or vehshop.currentmenu == "BMW" or vehshop.currentmenu == "Ducati"  then
+					if vehshop.currentmenu == "Audi" or vehshop.currentmenu == "BMW" or vehshop.currentmenu == "Ducati" or vehshop.currentmenu == "Volkswagen"  then
 						if selected then
 							hash = GetHashKey(button.model)
 							if IsControlJustPressed(1,47) then
@@ -729,6 +737,8 @@ function vehSR_ButtonSelected(button)
 			vehSR_OpenMenu('Audi')
 		elseif btn == "BMW" then
 			vehSR_OpenMenu('BMW')
+		elseif btn == "Volkswagen" then
+			vehSR_OpenMenu('Volkswagen')
 		end
 	elseif this == "Motos" then
 		if btn == "Ducati" then
@@ -736,7 +746,7 @@ function vehSR_ButtonSelected(button)
 		elseif btn == "BMW" then
 			vehSR_OpenMenu('BMW')
 		end
-	elseif this == "Audi" or this == "BMW" or this == "Ducati" then
+	elseif this == "Audi" or this == "BMW" or this == "Ducati" or this == "Volkswagen" then
 		TriggerServerEvent('veh_SR:CheckMoneyForVeh',this,button.model,button.costs,"car",false,false)
 	end
 end
@@ -770,7 +780,7 @@ function vehSR_Back()
 	backlock = true
 	if vehshop.currentmenu == "main" then
 		vehSR_CloseCreator("","")
-	elseif vehshop.currentmenu == "Audi" or vehshop.currentmenu == "BMW" or vehshop.currentmenu == "Ducati" then
+	elseif vehshop.currentmenu == "Audi" or vehshop.currentmenu == "BMW" or vehshop.currentmenu == "Ducati" or vehshop.currentmenu == "Volkswagen" then
 		if DoesEntityExist(fakecar.car) then
 			Citizen.InvokeNative(0xEA386986E786A54F, Citizen.PointerValueIntInitialized(fakecar.car))
 			scaleform = nil

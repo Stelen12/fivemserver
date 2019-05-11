@@ -30,6 +30,7 @@ vehshop = {
 			buttons = {
 				{name = "audi", description = ''},
 				{name = "bmw", description = ''},
+				{name = "Volkswagen", description = ''},
 			}
 		},
 		["Audi"] = {
@@ -44,6 +45,13 @@ vehshop = {
 			name = "BMW",
 			buttons = {
 				{name = "I8", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "i8"},
+			}
+		},
+		["Volkswagen"] = {
+			title = "Volkswagen",
+			name = "Volkswagen",
+			buttons = {
+				{name = "Bora", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "elegy"},
 			}
 		},
 		-------------------Motos----------------------
