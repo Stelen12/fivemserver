@@ -31,6 +31,7 @@ vehshop = {
 				{name = "Audi", description = ''},
 				{name = "Bmw", description = ''},
 				{name = "Volkswagen", description = ''},
+				{name = "Lamborgini", description = ''},
 			}
 		},
 		["Audi"] = {
@@ -63,6 +64,15 @@ vehshop = {
 				{name = "Saveiro", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "sadler"},
 				{name = "Scirocco", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "prairie"},
 		
+			}
+		},
+		["Lamborgini"] = {
+			title = "Lamborgini",
+			name = "Lamborgini",
+			buttons = {
+				{name = "Aventador", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "lp700r"},
+				{name = "Centenario", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "lp770"},
+				{name = "Terzo Milennio", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "lamtmc"},
 			}
 		},
 		-------------------Motos----------------------
