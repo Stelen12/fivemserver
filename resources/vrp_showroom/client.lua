@@ -128,30 +128,30 @@ local vehshop = {
 			name = "Audi",
 			buttons = {
 				{name = "A4", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "aaq4"},
-				{name = "R8", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "r8ppi"},
+				{name = "R8", costs = 1500000, speed = 60, acce = 60, brake = 60, trac = 30, description = {}, model = "r8ppi"},
 			}
 		},
 		["BMW"] = {
 			title = "BMW",
 			name = "BMW",
 			buttons = {
-				{name = "I8", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "i8"},
-				{name = "M2", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "m2f22"},
-				{name = "M5", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bmci"},
+				{name = "I8", costs = 3000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "i8"},
+				{name = "M2", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "m2f22"},
+				{name = "M5", costs = 750000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bmci"},
 			}
 		},
 		["Volkswagen"] = {
 			title = "Volkswagen",
 			name = "Volkswagen",
 			buttons = {
-				{name = "Bora", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "elegy"},
-				{name = "Fox", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "blista"},
-				{name = "Fusca", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "fusca"},
-				{name = "Golf MK6", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "golf6"},
-				{name = "Golf MK7", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "golf7"},
-				{name = "Passat", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "passat"},
-				{name = "Saveiro", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "sadler"},
-				{name = "Scirocco", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "prairie"},
+				{name = "Bora", costs = 250000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "elegy"},
+				{name = "Fox", costs = 80000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "blista"},
+				{name = "Fusca", costs = 15000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "fusca"},
+				{name = "Golf MK6", costs = 400000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "golf6"},
+				{name = "Golf MK7", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "golf7"},
+				{name = "Passat", costs = 800000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "passat"},
+				{name = "Saveiro", costs = 60000 , speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "sadler"},
+				{name = "Scirocco", costs = 1000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "prairie"},
 		
 			}
 		},
@@ -159,43 +159,42 @@ local vehshop = {
 			title = "Lamborgini",
 			name = "Lamborgini",
 			buttons = {
-				{name = "Aventador", costs = 5000, speed = 80, acce = 80, brake = 100, trac = 30, description = {}, model = "lp700r"},
-				{name = "Centenario", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "lp770"},
-				{name = "Terzo Milennio", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "lamtmc"},
-				{name = "Sesto Elemento", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "sesto"},
+				{name = "Aventador", costs = 10000000, speed = 80, acce = 80, brake = 100, trac = 30, description = {}, model = "lp700r"},
+				{name = "Centenario", costs = 15000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "lp770"},
+				{name = "Terzo Milennio", costs = 20000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "lamtmc"},
+				{name = "Sesto Elemento", costs = 8000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "sesto"},
 			}
 		},
 		["Peugeot"] = {
 			title = "Peugeot",
 			name = "Peugeot",
 			buttons = {
-				{name = "208", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "208"},
-				{name = "RcZ", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rcz16"},
+				{name = "208", costs = 70000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "208"},
+				{name = "RcZ", costs = 450000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rcz16"},
 			}
 		},
 		["Renault"] = {
 			title = "Renault",
 			name = "Renault",
 			buttons = {
-				{name = "Clio", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "clio"},
-				{name = "Kangoo", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "kangoo"},
-				{name = "Clio Rs", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "cliors"},
-				{name = "9", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "asea"},
+				{name = "Clio", costs = 40000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "clio"},
+				{name = "Kangoo", costs = 25000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "kangoo"},
+				{name = "9", costs = 10000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "asea"},
 			}
 		},
 		["Chevrolet"] = {
 			title = "Chevrolet",
 			name = "Chevrolet",
 			buttons = {
-				{name = "Camaro", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "ccss16"},
-				{name = "Antigua", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "proc10"},
+				{name = "Camaro", costs = 2000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "ccss16"},
+				{name = "Antigua", costs = 350000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "proc10"},
 			}
 		},
 		["Ford"] = {
 			title = "Ford",
 			name = "Ford",
 			buttons = {
-				{name = "Focus", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "focusrs"},
+				{name = "Focus", costs = 350000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "focusrs"},
 				{name = "Mustang", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "dominator"},
 			}
 		},
@@ -203,70 +202,70 @@ local vehshop = {
 			title = "Bugatti",
 			name = "Bugatti",
 			buttons = {
-				{name = "Veyron", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bugatti"},
+				{name = "Veyron", costs = 6000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bugatti"},
 			}
 		},
 		["Nissan"] = {
 			title = "Nissan",
 			name = "Nissan",
 			buttons = {
-				{name = "GTR", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gtr"},
+				{name = "GTR", costs = 250000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gtr"},
 			}
 		},
 		["Porsche"] = {
 			title = "Porsche",
 			name = "Porsche",
 			buttons = {
-				{name = "Cayenne", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "pct18"},
+				{name = "Cayenne", costs = 700000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "pct18"},
 			}
 		},
 		["Jeep"] = {
 			title = "Jeep",
 			name = "Jeep",
 			buttons = {
-				{name = "Grand Cherokee", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "demonhawk"},
+				{name = "Grand Cherokee", costs = 1000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "demonhawk"},
 			}
 		},
 		["Hummer"] = {
 			title = "Hummer",
 			name = "Hummer",
 			buttons = {
-				{name = "Hummer V1", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "patriot"},
+				{name = "Hummer V1", costs = 280000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "patriot"},
 			}
 		},
 		["Mercedes Benz"] = {
 			title = "Mercedes Benz",
 			name = "Mercedes Benz",
 			buttons = {
-				{name = "AMG GT", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "amggt"},
+				{name = "AMG GT", costs = 2000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "amggt"},
 			}
 		},
 		["Pagani"] = {
 			title = "Pagani",
 			name = "Pagani",
 			buttons = {
-				{name = "Huayra", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "huayrar"},
+				{name = "Huayra", costs = 6000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "huayrar"},
 			}
 		},
 		["McClaren"] = {
 			title = "McClaren",
 			name = "McClaren",
 			buttons = {
-				{name = "P1", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "p1"},
+				{name = "P1", costs = 10000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "p1"},
 			}
 		},
 		["Fiat"] = {
 			title = "Fiat",
 			name = "Fiat",
 			buttons = {
-				{name = "Punto", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gresley"},
+				{name = "Punto", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gresley"},
 			}
 		},
 		["Range"] = {
 			title = "Range",
 			name = "Range",
 			buttons = {
-				{name = "Rover", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rrstart"},
+				{name = "Rover", costs = 600000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rrstart"},
 			}
 		},
 
@@ -286,36 +285,36 @@ local vehshop = {
 			title = "Ducati",
 			name = "Ducati",
 			buttons = {
-				{name = "Hypermotard", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bati"},
-				{name = "Panigale", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "panigale"},	
+				{name = "Hypermotard", costs = 250000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bati"},
+				{name = "Panigale", costs = 200000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "panigale"},	
 			}
 		},
 		["KTM"] = {
 			title = "KTM",
 			name = "KTM",
 			buttons = {
-				{name = "RC 390", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rc"},
+				{name = "RC 390", costs = 100000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rc"},
 			}
 		},
 		["Harley Davidson"] = {
 			title = "Harley Davidson",
 			name = "Harley Davidson",
 			buttons = {
-				{name = "Harley", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "daemon"},
+				{name = "Harley", costs = 8000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "daemon"},
 			}
 		},
 		["Yamaha"] = {
 			title = "Yamaha",
 			name = "Yamaha",
 			buttons = {
-				{name = "ZX 10", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "zx10r"},
+				{name = "ZX 10", costs = 150000, speed = 70, acce = 80, brake = 60, trac = 30, description = {}, model = "zx10r"},
 			}
 		},
 		["Honda"] = {
 			title = "Honda",
 			name = "Honda",
 			buttons = {
-				{name = "Gilera", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "biz25"},
+				{name = "Gilera", costs = 15000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "biz25"},
 			}
 		},
 
