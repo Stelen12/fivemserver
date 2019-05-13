@@ -10,25 +10,27 @@ cfg.market_types = {
 
     -- list itemid => price
     -- Drinks
-    ["Leche"] = 20,
-    ["Agua"] = 20,
-    ["Cafe"] = 40,
-    ["Coca Cola"] = 40,
-    ["Manaos"] = 80,
-    ["Te Helado"] = 80,
-    ["Speed"] = 120,
-    ["Red Bull"] = 120,
-    ["Fernandito"] = 140,
-    ["Vodka"] = 300,
+      ["Leche"] = 20,
+      ["water"] = 20,
+      ["tacos"] = 20,
+      ["Cafe"] = 40,
+      ["Coca Cola"] = 40,
+      ["Manaos"] = 80,
+      ["Te Helado"] = 80,
+      ["Speed"] = 120,
+      ["Red Bull"] = 120,
+      ["Fernandito"] = 140,
+      ["Vodka"] = 300,	    
 
-    --Food
-    ["Pan"] = 20,
-    ["Pitusas"] = 60,
-    ["Sanguche de milanesa"] = 80,
-    ["Sanguche de bondiola"] = 200,
-    ["Papas Fritas"] = 200,
-    ["Choripan"] = 250,
-    ["Lechon"] = 650,
+
+      --Food	   
+      ["Pan"] = 20,
+      ["Pitusas"] = 60,
+      ["Sanguche de milanesa"] = 80,
+      ["Sanguche de bondiola"] = 200,
+      ["Papas Fritas"] = 200,
+      ["Choripan"] = 250,
+      ["Lechon"] = 650,
   },
   --["drugstore"] = {
   --  _config = {blipid=51, blipcolor=2},
@@ -84,3 +86,7 @@ cfg.markets = {
 }
 
 return cfg
+
+
+    --Food
+    

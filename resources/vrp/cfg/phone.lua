@@ -22,36 +22,36 @@ cfg.services = {
     blipcolor = 38,
     alert_time = 30, -- 5 minutes
     alert_permission = "police.service",
-    alert_notify = "~r~Police alert:~n~~s~",
-    notify = "~b~You called the police.",
-    answer_notify = "~b~The police is coming."
+    alert_notify = "~r~Alerta policial:~n~~s~",
+    notify = "~b~Llamaste a la policia.",
+    answer_notify = "~b~La policia esta en camino."
   },
   ["emergency"] = {
     blipid = 153,
     blipcolor = 1,
     alert_time = 30, -- 5 minutes
     alert_permission = "emergency.service",
-    alert_notify = "~r~Emergency alert:~n~~s~",
-    notify = "~b~You called the emergencies.",
-    answer_notify = "~b~The emergencies are coming."
+    alert_notify = "~r~Alerta SAME:~n~~s~",
+    notify = "~b~Llamaste al SAME.",
+    answer_notify = "~b~El SAME esta en camino."
   },
   ["uber"] = {
     blipid = 198,
     blipcolor = 5,
     alert_time = 300,
     alert_permission = "uber.service",
-    alert_notify = "~y~uber alert:~n~~s~",
-    notify = "~y~You called a uber.",
-    answer_notify = "~y~A uber is coming."
+    alert_notify = "~y~Alerta UBER:~n~~s~",
+    notify = "~y~Llamaste un UBER.",
+    answer_notify = "~y~El UBER esta camino."
   },
   ["repair"] = {
     blipid = 446,
     blipcolor = 5,
     alert_time = 300,
     alert_permission = "repair.service",
-    alert_notify = "~y~Repair alert:~n~~s~",
-    notify = "~y~You called a repairer.",
-    answer_notify = "~y~A repairer is coming."
+    alert_notify = "~y~Alerta mecanico:~n~~s~",
+    notify = "~y~Llamaste a un mecanico.",
+    answer_notify = "~y~El mecanico esta camino."
   }
 }
 

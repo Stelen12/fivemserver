@@ -7,7 +7,7 @@ local cfg = {}
 cfg.item_transformers = {
   -- example of harvest item transformer
     {
-    name="Fishing", -- menu name
+    name="Pescando", -- menu name
     permissions = {"mission.delivery.fish"}, -- you can add permissions
     r=0,g=125,b=255, -- color
     max_units=100000,
@@ -15,8 +15,8 @@ cfg.item_transformers = {
     x=743.19586181641,y=3895.3967285156,z=30.5, 
     radius=3, height=1.5, -- area
     recipes = {
-      ["Catch some Catfish"] = { -- action name
-        description="Trying to catch some Catfish", -- action description
+      ["Pescar Catfish"] = { -- action name
+        description="Tratando de pescar Catfish", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
@@ -24,8 +24,8 @@ cfg.item_transformers = {
           ["catfish"] = 1
         }
       },
-      ["Catch some Bass"] = { -- action name
-        description="Trying to catch some Bass", -- action description
+      ["Pescar Bass"] = { -- action name
+        description="Tratando de pescar Bass", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
@@ -36,7 +36,7 @@ cfg.item_transformers = {
     }
   },
        {
-    name="Trash Collector", -- menu name
+    name="Recolectar basura", -- menu name
     permissions = {"mission.collect.trash"}, -- you can add permissions
     r=0,g=125,b=255, -- color
     max_units=100000,
@@ -44,8 +44,8 @@ cfg.item_transformers = {
     x=805.77130126953,y=-1078.0639648438,z=28.55744934082,
     radius=3, height=1.5, -- area
     recipes = {
-      ["Gather Trash"] = { -- action name
-        description="Gathering Trash...", -- action description
+      ["Recolectar basura"] = { -- action name
+        description="Recolectando basura...", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
@@ -85,7 +85,7 @@ cfg.item_transformers = {
     }
   },
       {
-    name="Medical Transport", -- menu name
+    name="Transporte medicinal", -- menu name
     permissions = {"mission.delivery.medical"}, -- you can add permissions
     r=0,g=125,b=255, -- color
     max_units=100000,
@@ -93,8 +93,8 @@ cfg.item_transformers = {
     x=2213.0520019531,y=5577.5981445313,z=53.795757293701,
     radius=3, height=1.5, -- area
     recipes = {
-      ["Gather Medical Weed"] = { -- action name
-        description="Gathering Medical Weed", -- action description
+      ["Obtener marihuana medicinal"] = { -- action name
+        description="Obteniendo marihuana medicinal", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
@@ -119,7 +119,7 @@ cfg.item_transformers = {
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={ -- items given per unit
-          ["paquetes"] = 1
+          ["parcels"] = 1
         }
       }
 	 }
@@ -198,7 +198,7 @@ cfg.item_transformers = {
   },
   {
     name="Hacker", -- menu name
-	permissions = {"hacker.credit_cards"}, -- you can add permissions
+	  permissions = {"hacker.credit_cards"}, -- you can add permissions
     r=255,g=125,b=0, -- color
     max_units=100000,
     units_per_minute=100000,
@@ -211,8 +211,8 @@ cfg.item_transformers = {
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={
-		["credit"] = 1,
-		["dirty_money"] = 1
+          ["credit"] = 1,
+          ["dirty_money"] = 1
 		}, -- items given per unit
         aptitudes={ -- optional
           ["hacker.hacking"] = 0.2 -- "group.aptitude", give 1 exp per unit
@@ -229,12 +229,12 @@ cfg.item_transformers = {
     x=1272.7305908203,y=-1711.9899902344,z=54.771453857422,
     radius=2, height=1.0, -- area
     recipes = {
-      ["Forging"] = { -- action name
+    ["Forging"] = { -- action name
         description="Forging fake ID's", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={
-		["credit"] = 1
+		      ["credit"] = 1
 		}, -- items taken per unit
         products={
 		["fake_id"] = 1
@@ -264,7 +264,7 @@ cfg.item_transformers = {
     }
   },
   {
-    name="Bank Driver Mission", -- menu name
+    name="Obteniendo dinero", -- menu name
 	permissions = {"bankdriver.money"}, -- you can add permissions
     r=255,g=125,b=0, -- color
     max_units=1,
@@ -272,8 +272,8 @@ cfg.item_transformers = {
     x=236.87298583984,y=217.09535217285,z=106.28678894043,
     radius=2, height=1.0, -- area
     recipes = {
-      ["Bank Money"] = { -- action name
-       description="Get a money bank for mission.", -- action description
+      ["Obtener dinero"] = { -- action name
+       description="Obteniendo dinero.", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
@@ -285,7 +285,7 @@ cfg.item_transformers = {
     }
   },
   {
-    name="Collect Cargo", -- menu name
+    name="Recoger carga", -- menu name
 	permissions = {"mission.pilot.cargo"}, -- you can add permissions
     r=255,g=125,b=0, -- color
     max_units=100000,
@@ -293,8 +293,8 @@ cfg.item_transformers = {
     x=1618.9204101563,y=3227.7058105469,z=40.411529541016,
     radius=2, height=1.0, -- area
     recipes = {
-      ["Cargo"] = { -- action name
-       description="Collecting Cargo...", -- action description
+      ["Recoger carga"] = { -- action name
+       description="Recogiendo carga...", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
