@@ -1,11 +1,11 @@
 
 local lang = {
-  repair = "Repair {1}.",
-  reward = "Reward: {1} $.",
-  bankdriver = "Given Money {1}.",
-  reward = "Reward: {1} $.",
+  repair = "Reparar {1}.",
+  reward = "Recompensa: {1} $.",
+  bankdriver = "Dinero obtenido {1}.",
+  reward = "Recompensa: {1} $.",
   delivery = {
-    title = "Buy the items from the Markets (see map) and then bring them to me!",
+    title = "Compra lo pedido en las tiendas (ver mapa) y despues traemelo!!",
     item = "- {2} {1}"
   },
   drugseller = {
@@ -17,7 +17,7 @@ local lang = {
 	item = "- {2} {1}"
 	},
   fisherman = {
-	title = "Go fishing (see map) and then bring me those Fish!",
+	title = "Anda a pescar (ver mapa) y despues traeme lo obtenido!!",
 	item = "- {2} {1}"
     },
   weapons_smuggler = {
@@ -25,7 +25,7 @@ local lang = {
 	item = "- {2} {1}"
     },
   medical = {
-	title = "Get the Medical Weed (see map) and then deliver the Medical Weed to me!",
+	title = "Consigue Marihuana medicial (ver mapa) y despues traemela!!",
 	item = "- {2} {1}"
     },
   ups = {
@@ -37,7 +37,7 @@ local lang = {
 	-- item = "- {2} {1}"
     -- },
   pilot = {
-	title = "Collect Cargo (see map) and then deliver the cargo to me!",
+	title = "Recoge cargas (ver mapa) y despues traemelas!",
 	item = "- {2} {1}"
     },
   police = {
@@ -49,7 +49,7 @@ local lang = {
 	item = "- {2} {1}"
     },
   trash = {
-	title = "Collect trash (see map) and the bring them to me.",
+	title = "Recoge basura (ver mapa) y despues traemela!.",
 	item = "- {2} {1}"
     },
   forger = {

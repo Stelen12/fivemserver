@@ -63,8 +63,8 @@ local function gen(ftype, vary_hunger, vary_thirst)
 end
 
 -- DRINKS --
-
-items["Agua"] = {"Agua","", gen("drink",0,-25),0.5}
+items["water"] = {"Agua","", gen("drink",0,-25),0.5}
+items["tacos"] = {"Tacos","", gen("drink",0,-25),0.5}
 items["Leche"] = {"Leche","", gen("drink",0,-5),0.5}
 items["Cafe"] = {"Cafe","", gen("drink",0,-10),0.2}
 items["Coca Cola"] = {"Coca Cola","", gen("drink",0,-15),0.2}
@@ -72,12 +72,12 @@ items["Manaos"] = {"Manaos","", gen("drink",0,-20), 0.5}
 items["Te Helado"] = {"Te Helado","", gen("drink",0,-25),0.5}
 items["Red Bull"] = {"Red Bull","", gen("drink",0,-35),0.3}
 items["Speed"] = {"Speed","", gen("drink",0,-40),0.3}
-items["Fernandito"] = {"Lemonade","", gen("drink",0,-45),0.3}
-items["Vodka"] = {"Vodka","", gen("drink",15,-65),0.5}
+items["Fernandito"] = {"Fernandito","", gen("drink",0,-45),0.3}
+items["Vodka"] = {"Vodka","", gen("drink",15,-65),0.5}	
+
 
 --FOOD
 
--- create Breed item
 items["Pan"] = {"Pan","", gen("eat",-10,0),0.5}
 items["Pitusas"] = {"Pitusas","", gen("eat",-15,0),0.2}
 items["Sanguche de milanesa"] = {"Sanguche de milanesa","", gen("eat",-20,0),0.2}
@@ -85,5 +85,6 @@ items["Sanguche de bondiola"] = {"Sanguche de bondiola","", gen("eat",-45,0),0.8
 items["Papas Fritas"] = {"Papas Fritas","", gen("eat",-25,0),0.5}
 items["Choripan"] = {"Choripan","", gen("eat",10,15),0.3}
 items["Lechon"] = {"Lechon","", gen("eat",10,15),0.3}
+
 
 return items

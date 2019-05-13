@@ -29,7 +29,7 @@ vehshop = {
 			name = "Autos",
 			buttons = {
 				{name = "Audi", description = ''},
-				{name = "Bmw", description = ''},
+				{name = "BMW", description = ''},
 				{name = "Volkswagen", description = ''},
 				{name = "Lamborgini", description = ''},
 				{name = "Peugeot", description = ''},
@@ -104,7 +104,6 @@ vehshop = {
 			buttons = {
 				{name = "Clio", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "clio"},
 				{name = "Kangoo", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "kangoo"},
-				{name = "Clio Rs", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "cliors"},
 				{name = "9", costs = 5000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "asea"},
 			}
 		},

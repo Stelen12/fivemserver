@@ -12,12 +12,13 @@ cfg.items = {
   ["M4A1"] = {"M4A1", "Helps give non-Americans freedom.", nil, 0.01}, -- no choices
   ["credit"] = {"Stolen Credit Card", "Credit card.", nil, 0.01}, -- no choices
   ["driver"] = {"Carnet de conducir", "license card.", nil, 0.01}, -- no choices
-  ["bank_money"] = {"Dinero del banco", "$.", nil, 0},
-  ["trash"] = {"Trash", "It fucking stinks!", nil, 0},  -- no choices
+  ["bank_money"] = {"Dinero", "$.", nil, 0},
+  ["trash"] = {"Basura", "Huele a mierda..", nil, 0},  -- no choices
   ["fake_id"] = {"Fake ID", "It just says Mcluvin.", nil, 0}, -- no choices
   ["police_report"] = {"Police Report", "Take it to the Bank Manager.", nil, 0},  -- no choices
   ["ems_report"] = {"EMS Report", "Take it to the Hospital.", nil, 0}, -- no choices
-  ["cargo"] = {"Cargo", "Cajas llenas de porno.", nil, 0} -- no choices
+  ["cargo"] = {"Carga", "Una carga para entregar.", nil, 0}, -- no choices
+  ["bass"] = {"Pejerrey", "Un pejerrey.", nil, 0} -- no choices
 }
 
 -- load more items function
