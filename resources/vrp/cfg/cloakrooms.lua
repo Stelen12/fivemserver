@@ -83,14 +83,18 @@ cfg.cloakroom_types = {
     ["Male"] = surgery_male,
     ["Female"] = surgery_female
   },
+  ["mecanico"] = {
+    _config = { not_uniform = true },
+    ["Male"] = surgery_male,
+  },
    -- ["Santa"] = {
     -- _config = { permissions = {"santa.cloakroom"} },
     -- ["Santa Outfit"] = santa
     -- },
-   ["emergency"] = {
-    _config = { permissions = {"emergency.cloakroom"} },
-    ["SAME"] = emergency_male,
-    },
+  ["emergency"] = {
+  _config = { permissions = {"emergency.cloakroom"} },
+  ["SAME"] = emergency_male,
+  },
   ["Agente"] = {
     _config = { permissions = {"Commander.cloakroom"} },
     ["Agente"] = hway_male
@@ -150,7 +154,7 @@ cfg.cloakrooms = {
   {"surgery",620.459167480469,2766.82641601563,42.0881042480469},
   {"surgery",1196.89221191406,2710.220703125,38.2226066589355},
   {"surgery",-3178.01000976563,1043.21044921875,20.8632164001465},
-  {"surgery",-1101.15161132813,2710.8203125,19.1078643798828},
+  {"mecanico",-1101.15161132813,2710.8203125,19.1078643798828},
   {"emergency",244.1099395752,-1382.8720703125,39.534328460693}
   -- {"Santa",-1373.0778808594,-2677.6694335938,13.944942474365} -- Santa's Cloakroom (Disabled)
 }

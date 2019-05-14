@@ -20,10 +20,6 @@ INTERIORS = {
     [12] = {id = 12, x = 240.50773620605, y = -1379.4248046875, z = 33.741641998291,  name = "Exit Morgue", destination = {13}},
     [13] = {id = 13,x = 285.69213867188, y = -1351.2567138672, z = 24.534639358521,  name = "Enter Morgue", destination = {12}},
 
---	Police Gun
-    [14] = {id = 14, x = 452.10162353516, y = -982.51348876953, z = 30.689580917358,  name = "Exit Armory", destination = {15}},
-    [15] = {id = 15, x = 454.17575073242, y = -982.42846679688, z = 30.689605712891,  name = "Enter Armory", destination = {14}},
-
 -- Lawyer
     [16] = {id = 16, x = -1898.3725585938, y = -572.23272705078, z = 11.844171524048,  name = "Exit Lawyers office", destination = {17}},
     [17] = {id = 17,x = -1902.0192871094, y = -572.36346435547, z = 19.097213745117,  name = "Enter Lawyers office", destination = {16}},	

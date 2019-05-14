@@ -69,7 +69,7 @@ AddEventHandler("playerDropped", function()
 		local wtf = robbers[source]
 		local wtf2 = banks[wtf].nameofbank
 		robbers[source] = nil
-		TriggerClientEvent('chatMessage', -1, 'NEWS', {255, 0, 0}, "Robbery was cancelled at: ^2" ..wtf2.."Reason: [Disconnected]")
+		TriggerClientEvent('chatMessage', -1, 'NEWS', {255, 0, 0}, "El robo fue cancelado: ^2" ..wtf2.."Razon: [Desconectado]")
 	end
 end)
 
@@ -87,7 +87,7 @@ AddEventHandler('es_bank:playerdied', function(robb)
 	if(robbers[source])then
 		TriggerClientEvent('es_bank:playerdiedlocal', source)
 		robbers[source] = nil
-		TriggerClientEvent('chatMessage', -1, 'NEWS', {255, 0, 0}, "Robbery was cancelled at: ^2" .. banks[robb].nameofbank)
+		TriggerClientEvent('chatMessage', -1, 'NEWS', {255, 0, 0}, "El robo fue cancelado: ^2" .. banks[robb].nameofbank)
 	end
 end)
 
@@ -95,21 +95,21 @@ RegisterServerEvent('es_bank:rob')
 AddEventHandler('es_bank:rob', function(robb)
   local user_id = vRP.getUserId({source})
   local player = vRP.getUserSource({user_id})
-  local cops = vRP.getUsersByGroup({"cop"}) -- remember to use the cop group or this won't work - K > Admin > Add Group > User ID > cop
+  local cops = vRP.getUsersByGroup({"Comisario"}) -- remember to use the cop group or this won't work - K > Admin > Add Group > User ID > cop
   if vRP.hasGroup({user_id,"cop"}) then
-    vRPclient.notify(player,{"~r~Cops can't rob banks."})
+    vRPclient.notify(player,{"~r~Los policias no roban bancos."})
   else
-    if #cops >= 2 then -- change 2 to the minimum amount online necessary
+    if #cops >= 1 then -- change 2 to the minimum amount online necessary
 	  if banks[robb] then
 		  local bank = banks[robb]
 
 		  if (os.time() - bank.lastrobbed) < 600 and bank.lastrobbed ~= 0 then
-			  TriggerClientEvent('chatMessage', player, 'ROBBERY', {255, 0, 0}, "This has already been robbed recently. Please wait another: ^2" .. (1200 - (os.time() - bank.lastrobbed)) .. "^0 seconds.")
+			  TriggerClientEvent('chatMessage', player, 'ROBBERY', {255, 0, 0}, "Este fue robado hacer poco. Espera o busca otro: ^2" .. (1200 - (os.time() - bank.lastrobbed)) .. "^0 segundos.")
 			  return
 		  end
 		  TriggerClientEvent('chatMessage', -1, 'NEWS', {255, 0, 0}, "Robbery in progress at ^2" .. bank.nameofbank)
-		  TriggerClientEvent('chatMessage', player, 'SYSTEM', {255, 0, 0}, "You started a robbery at: ^2" .. bank.nameofbank .. "^0, do not get too far away from this point!")
-		  TriggerClientEvent('chatMessage', player, 'SYSTEM', {255, 0, 0}, "Hold the fort for ^1 12 ^0minutes and the money is yours!")
+		  TriggerClientEvent('chatMessage', player, 'SYSTEM', {255, 0, 0}, "Empezaste el robo: ^2" .. bank.nameofbank .. "^0, no te alejes demasiado de esta zona!")
+		  TriggerClientEvent('chatMessage', player, 'SYSTEM', {255, 0, 0}, "Manten la negociacion ^1 12 ^0minutos y la guita sera tuya!")
 		  TriggerClientEvent('es_bank:currentlyrobbing', player, robb)
 		  banks[robb].lastrobbed = os.time()
 		  robbers[player] = robb
@@ -118,14 +118,14 @@ AddEventHandler('es_bank:rob', function(robb)
 			  if(robbers[savedSource])then
 				  if(user_id)then
 					  vRP.giveInventoryItem({user_id,"dirty_money",bank.reward,true})
-					  TriggerClientEvent('chatMessage', -1, 'NEWS', {255, 0, 0}, "Robbery is over at: ^2" .. bank.nameofbank .. "^0!")
+					  TriggerClientEvent('chatMessage', -1, 'NEWS', {255, 0, 0}, "El robo fue terminado: ^2" .. bank.nameofbank .. "^0!")
 					  TriggerClientEvent('es_bank:robberycomplete', savedSource, bank.reward)
 				  end
 			  end
 		  end)		
 	  end
     else
-      vRPclient.notify(player,{"~r~Not enough cops online."})
+      vRPclient.notify(player,{"~r~No hay suficientes policias."})
     end
 	end
 end)
