@@ -49,7 +49,7 @@ cfg.market_types = {
   },
   ["tools"] = {
     _config = {blipid=402, blipcolor=47, permissions={"repair.market"}},
-    ["repairkit"] = 50
+    ["repairkit"] = 200
   }
 }
 

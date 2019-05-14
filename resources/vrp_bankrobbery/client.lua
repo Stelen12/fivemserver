@@ -171,7 +171,7 @@ Citizen.CreateThread(function()
 					
 					if(Vdist(pos.x, pos.y, pos.z, pos2.x, pos2.y, pos2.z) < 2)then
 						if (incircle == false) then
-							bank_DisplayHelpText("Press ~INPUT_CONTEXT~ to rob ~b~" .. v.nameofbank .. "~w~ beware, the police will be alerted!")
+							bank_DisplayHelpText("Presionar ~INPUT_CONTEXT~ para robar ~b~" .. v.nameofbank .. "~w~ , la policia sera advertida!")
 						end
 						incircle = true
 						if(IsControlJustReleased(1, 51))then
@@ -188,7 +188,7 @@ Citizen.CreateThread(function()
 		    SetPlayerWantedLevel(PlayerId(), 0, 0)
             SetPlayerWantedLevelNow(PlayerId(), 0)
 			
-			bank_drawTxt(0.66, 1.44, 1.0,1.0,0.4, "Robbing bank: ~r~" .. secondsRemaining .. "~w~ seconds remaining", 255, 255, 255, 255)
+			bank_drawTxt(0.66, 1.44, 1.0,1.0,0.4, "Robando banco: ~r~" .. secondsRemaining .. "~w~ segundos restantes", 255, 255, 255, 255)
 			
 			local pos2 = banks[bank].position
 			local ped = GetPlayerPed(-1)

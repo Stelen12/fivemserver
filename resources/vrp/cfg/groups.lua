@@ -137,7 +137,7 @@ cfg.groups = {
 	  "mission.weapons.smuggler",
     "smuggler.service"
     },
-  ["Aspirante"] = {
+  ["SAME - Aspirante"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Sos Aspirante, salario : $5000."}) end
 	},
@@ -157,7 +157,7 @@ cfg.groups = {
     "player.blips",
     "ems.mission"
   },
-  ["Doctor"] = {
+  ["SAME - Doctor"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Sos Doctor, salario : $2000."}) end
 	},
@@ -177,7 +177,7 @@ cfg.groups = {
     "player.blips",
     "ems.mission"
   },
-  ["Cirujano"] = {
+  ["SAME - Cirujano"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Sos Cirujano, salario : $3000."}) end
 	},
@@ -198,7 +198,7 @@ cfg.groups = {
 	"player.blips",
 	"ems.mission"
   },
-  ["Coordinador"] = {
+  ["SAME - Coordinador"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Sos Coordinador, salario : $2500."}) end
 	},
@@ -218,7 +218,7 @@ cfg.groups = {
 	"player.blips",
 	"ems.mission"
   },
-  ["Jefe de zona"] = {
+  ["SAME - Jefe de zona"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Sos Jefe de zona, salario : $2500."}) end
 	},
@@ -234,22 +234,53 @@ cfg.groups = {
 	"ems.loadshop",
 	--"player.list",
 	"police.menu_interaction",
-	"emsSearchRescue.paycheck",
+	"jefe.paycheck",
 	"player.blips",
 	"ems.mission"
   },
-  ["Mecanico"] = {
+  ["Mecanico - Novato"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
 	},
     "vehicle.repair",
     "vehicle.replace",
     "repair.service",
-	"mission.repair.satellite_dishes",
-	"mission.repair.wind_turbines",
-	"repair.vehicle",
-	"repair.market",
-	"repair.paycheck"
+    "repair.vehicle",
+    "repair.market",
+    "repair.paycheck"
+  },
+  ["Mecanico - Experimentado"] = {
+    _config = { gtype = "job",
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
+	},
+    "vehicle.repair",
+    "vehicle.replace",
+    "repair.service",
+    "repair.vehicle",
+    "repair.market",
+    "repair.paycheck.experimentado"
+  },
+  ["Mecanico - Subjefe"] = {
+    _config = { gtype = "job",
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
+	},
+    "vehicle.repair",
+    "vehicle.replace",
+    "repair.service",
+    "repair.vehicle",
+    "repair.market",
+    "repair.paycheck.subjefe"
+  },
+  ["Mecanico - Jefe"] = {
+    _config = { gtype = "job",
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
+	},
+    "vehicle.repair",
+    "vehicle.replace",
+    "repair.service",
+    "repair.vehicle",
+    "repair.market",
+    "repair.paycheck.jefe"
   },
   ["Forger"] = {
     _config = { gtype = "job",
@@ -356,7 +387,7 @@ cfg.groups = {
 	"judge.paycheck",
 	"Judge.whitelisted"
   },
-  ["Agente"] = {
+  ["Policia - Agente"] = {
     _config = { gtype = "job",
 	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
@@ -377,7 +408,8 @@ cfg.groups = {
 	"police.easy_unjail",
 	"police.spikes",
 	"police.menu",
-    "police.check",
+  "police.check",
+  "police.paycheck",
 	"toggle.service",
 	"police.freeze",
     "police.seize.items",
@@ -393,7 +425,7 @@ cfg.groups = {
 	"police.menu_interaction",
 	"police.mission"
   },
-  ["Cabo"] = {
+  ["Policia - Cabo"] = {
     _config = { gtype = "job",
 	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
@@ -413,6 +445,7 @@ cfg.groups = {
 	"police.spikes",
 	"police.menu",
     "police.check",
+    "police.paycheck.cabo",
 	"toggle.service",
 	"police.freeze",
     "police.wanted",
@@ -430,7 +463,7 @@ cfg.groups = {
 	"police.menu_interaction",
 	"police.mission"
 	},
-	["Cabo Primero"] = {
+	["Policia - Cabo Primero"] = {
     _config = { gtype = "job",
 	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
@@ -450,6 +483,7 @@ cfg.groups = {
 	"police.spikes",
 	"police.menu",
     "police.check",
+    "police.paycheck.cabo1",
 	"toggle.service",
 	"police.freeze",
     "police.wanted",
@@ -468,7 +502,7 @@ cfg.groups = {
 	"police.menu_interaction",
 	"police.mission"
   },
-  ["Sargento"] = {
+  ["Policia - Sargento"] = {
     _config = { gtype = "job",
 	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
@@ -489,6 +523,7 @@ cfg.groups = {
 	"police.spikes",
 	"police.menu",
     "police.check",
+    "police.paycheck.sargento",
 	"toggle.service",
 	"police.freeze",
     "police.seize.weapons",
@@ -506,7 +541,7 @@ cfg.groups = {
 	"police.menu_interaction",
 	"police.mission"
   },
-  ["Sargento Primero"] = {
+  ["Policia - Sargento Primero"] = {
     _config = { gtype = "job",
 	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
@@ -527,6 +562,7 @@ cfg.groups = {
 	"police.spikes",
 	"police.menu",
     "police.check",
+    "police.paycheck.sargento1",
 	"toggle.service",
 	"police.freeze",
     "police.seize.weapons",
@@ -544,7 +580,7 @@ cfg.groups = {
 	"police.menu_interaction",
 	"police.mission"
   },
-  ["Comisario"] = {
+  ["Policia - Comisario"] = {
     _config = { gtype = "job",
 	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
@@ -565,6 +601,7 @@ cfg.groups = {
 	"police.spikes",
 	"police.menu",
     "police.check",
+    "police.paycheck.comisario",
 	"toggle.service",
 	"police.freeze",
     "police.wanted",
