@@ -3,18 +3,18 @@ lang = "en"
 
 settings = {}
 settings["en"] = {
-	openMenu = "Press ~g~E~w to open the menu.",
-	electricError = "~r~You are driving an electric car.",
-	fuelError = "~r~You’re not in the right place.",
-	buyFuel = "buy fuel",
-	liters = "liters",
-	percent = "percent",
-	confirm = "confirm",
-	fuelStation = "Fuel station",
+	openMenu = "Presiona ~g~E~w para abrir el menu.",
+	electricError = "~r~Estas manejando un auto electrico.",
+	fuelError = "~r~No estas en el lugar correcto.",
+	buyFuel = "Comprar gasolina",
+	liters = "Litros",
+	percent = "Porcentaje",
+	confirm = "Confirmar",
+	fuelStation = "Estacion de servicio",
 	boatFuelStation = "Fuel station| Boats",
 	avionFuelStation = "Fuel station | Airplanes ",
 	heliFuelStation = "Fuel stations |helicopters",
-	price = "price"
+	price = "Precio"
 }
 
 settings["fr"] = {
@@ -42,4 +42,4 @@ text_x = 0.2575
 text_y = 0.975
 
 
-electricityPrice = 1 -- NOT RANDOMED !!!
+electricityPrice = 50 -- NOT RANDOMED !!!

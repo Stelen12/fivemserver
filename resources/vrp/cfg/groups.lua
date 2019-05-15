@@ -423,7 +423,6 @@ cfg.groups = {
 	"cop.whitelisted",
 	"Commander.paycheck",
 	"police.menu_interaction",
-	"police.mission"
   },
   ["Policia - Cabo"] = {
     _config = { gtype = "job",
@@ -460,8 +459,7 @@ cfg.groups = {
   "Cabo.loadshop",
 	"cop.whitelisted",
 	"Lieutenant.paycheck",
-	"police.menu_interaction",
-	"police.mission"
+	"police.menu_interaction"
 	},
 	["Policia - Cabo Primero"] = {
     _config = { gtype = "job",
@@ -499,8 +497,7 @@ cfg.groups = {
   "SWAT.loadshop",
 	"cop.whitelisted",
 	"Lieutenant.paycheck",
-	"police.menu_interaction",
-	"police.mission"
+	"police.menu_interaction"
   },
   ["Policia - Sargento"] = {
     _config = { gtype = "job",
@@ -538,8 +535,7 @@ cfg.groups = {
   "Sargento.loadshop",
 	"cop.whitelisted",
 	"Sergeant.paycheck",
-	"police.menu_interaction",
-	"police.mission"
+	"police.menu_interaction"
   },
   ["Policia - Sargento Primero"] = {
     _config = { gtype = "job",
@@ -577,8 +573,7 @@ cfg.groups = {
   "Sargento1.loadshop",
 	"cop.whitelisted",
 	"Sergeant.paycheck",
-	"police.menu_interaction",
-	"police.mission"
+	"police.menu_interaction"
   },
   ["Policia - Comisario"] = {
     _config = { gtype = "job",
@@ -618,109 +613,7 @@ cfg.groups = {
 	"cop.whitelisted",
 	"sheriff.paycheck",
 	"police.menu_interaction",
-	"police.mission"
   },
-      ["Police Detective"] = {
-    _config = { gtype = "job",
-	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
-      onspawn = function(player) vRPclient.setCop(player,{true}) end,
-      onleave = function(player) vRPclient.setCop(player,{false}) end
-	},
-	"Detective.cloakroom",
-    "police.pc",
-    --"police.handcuff",
-    "police.putinveh",
-    "police.getoutveh",
-    "police.service",
-	"police.drag",
-	"police.easy_cuff",
-	"police.easy_fine",
-	"police.easy_jail",
-	"police.easy_unjail",
-	"police.spikes",
-	"police.menu",
-    "police.check",
-	"toggle.service",
-	"police.freeze",
-    "police.wanted",
-    "police.seize.weapons",
-    "police.seize.items",
-    --"police.jail",
-    --"police.fine",
-    "police.announce",
-   -- "-police.store_weapons",
-    "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"police.vehicle",
-	"police.loadshop",
-	"emergency.market",
-	"emergency.revive",
-	"emergency.shop",
-	"cop.whitelisted",
-	"Detective.paycheck",
-	"police.menu_interaction",
-	"police.mission"
-  },
-      ["Dispatcher"] = {
-    _config = { gtype = "job",
-	  onjoin = function(player) vRPclient.setCop(player,{true}) end,
-      onspawn = function(player) vRPclient.setCop(player,{true}) end,
-      onleave = function(player) vRPclient.setCop(player,{false}) end
-	},
-    "police.pc",
-    "police.check",
-    "police.service",
-	"police.drag",
-	"police.easy_cuff",
-	"police.easy_fine",
-	"police.easy_jail",
-	"police.easy_unjail",
-	"police.spikes",
-	"police.menu",
-    "police.check",
-	"toggle.service",
-	"police.freeze",
-    "police.wanted",
-    "police.announce",
-   -- "-police.store_weapons",
-    "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	"emergency.market",
-	"emergency.revive",
-	"emergency.shop",
-	"cop.whitelisted",
-	"Dispatch.paycheck",
-	"police.menu_interaction",
-	"police.mission"
-  },
-
-
-  -- ["trafficguard"] = {
-    -- _config = { gtype = "job",
-	  -- onjoin = function(player) vRPclient.setCop(player,{true}) end,
-      -- onspawn = function(player) vRPclient.setCop(player,{true}) end,
-      -- onleave = function(player) vRPclient.setCop(player,{false}) end
-	-- },
-	-- "police.cloakroom",
-    -- "police.pc",
-    -- "police.handcuff",
-    -- "police.putinveh",
-    -- "police.getoutveh",
-    -- "police.check",
-    -- "police.service",
-    -- "police.wanted",
-    -- "police.seize.weapons",
-    -- "police.seize.items",
-    -- "police.jail",
-    -- "police.fine",
-    -- "police.announce",
-    -- "-police.store_weapons",
-    -- "-police.seizable",	-- negative permission, police can't seize itself, even if another group add the permission
-	-- "police.vehicle",
-	-- "police.loadshop",
-	-- "cop.whitelisted",
-	-- "trafficguard.paycheck"
-  -- },
-  
-  
   -- whitelist group for police, emergency and president jobs / add player to this group and user can view the job selection / search in the map
   -- moderator=president / president is guy from the server give a player group cop ems moderator when admin is offline / sallary : $10.000
   ["cop"] = {

@@ -27,28 +27,47 @@ end
 local banks = {
 	["fleeca"] = {
 		position = { ['x'] = 147.04908752441, ['y'] = -1044.9448242188, ['z'] = 29.36802482605 },
-		reward = 10000 + math.random(100000,200000),
-		nameofbank = "Fleeca Bank",
-		lastrobbed = 0
+		reward = 10000 + math.random(75000,150000),
+		nameofbank = "Banco de plaza",
+		lastrobbed = 0,
+		copsToRob = 4
 	},
 	["fleeca2"] = {
 		position = { ['x'] = -2957.6674804688, ['y'] = 481.45776367188, ['z'] = 15.697026252747 },
-		reward = 10000 + math.random(100000,200000),
-		nameofbank = "Fleeca Bank (Highway)",
-		lastrobbed = 0
+		reward = 10000 + math.random(20000,30000),
+		nameofbank = "Banco camino a paleto",
+		lastrobbed = 0,
+		copsToRob = 3
 	},
-	["blainecounty"] = {
-		position = { ['x'] = -107.06505584717, ['y'] = 6474.8012695313, ['z'] = 31.62670135498 },
-		reward = 10000 + math.random(100000,200000),
+	["flecaa3"] = {
+		
+		position = { ['x'] = 311.59384155273, ['y'] = -283.60348510742, ['z'] = 54.164756774902 },
+		reward = 10000 + math.random(20000,30000),
 		nameofbank = "Blaine County Savings",
-		lastrobbed = 0
+		lastrobbed = 0,
+		copsToRob = 3
+	},
+	["tienda"] = {
+		position = { ['x'] = 1126.7369384766, ['y'] = -980.61016845703, ['z'] = 45.415672302246 },
+		reward = 5000 + math.random(15000,20000),
+		nameofbank = "Tienda (Vespucci Boulevard)",
+		lastrobbed = 0,
+		copsToRob = 2
+	},
+	["tienda2"] = {
+		position = { ['x'] = 1126.7369384766, ['y'] = -980.61016845703, ['z'] = 45.415672302246 },
+		reward = 5000 + math.random(15000,20000),
+		nameofbank = "Tienda (San Andreas Avenue)",
+		lastrobbed = 0,
+		copsToRob = 2
+	},
+	["pacific"] = {
+		position = { ['x'] = 255.001098632813, ['y'] = 225.855895996094, ['z'] = 101.005694274902 },
+		reward = 60000 + math.random(150000,250000),
+		nameofbank = "Pacific Standard PDB (Downtown Vinewood)",
+		lastrobbed = 0,
+		copsToRob = 5
 	}
-	--["fleeca3"] = {
-		--position = { ['x'] = -1212.2568359375, ['y'] = -336.128295898438, ['z'] = 36.7907638549805 },
-		--reward = 30000 + math.random(100000,200000),
-		--nameofbank = "Fleeca Bank (Vinewood Hills)",
-		--lastrobbed = 0
-	--},
 	--["fleeca4"] = {
 		--position = { ['x'] = -354.452575683594, ['y'] = -53.8204879760742, ['z'] = 48.0463104248047 },
 		--reward = 30000 + math.random(100000,200000),
@@ -67,12 +86,6 @@ local banks = {
 		--nameofbank = "Fleeca Bank (Desert)",
 		--lastrobbed = 0
 	--},
-	--["pacific"] = {
-		--position = { ['x'] = 255.001098632813, ['y'] = 225.855895996094, ['z'] = 101.005694274902 },
-		--reward = 60000 + math.random(100000,200000),
-		--nameofbank = "Pacific Standard PDB (Downtown Vinewood)",
-		--lastrobbed = 0
-	--}
 }
 
 
@@ -86,7 +99,7 @@ end)
 RegisterNetEvent('es_bank:toofarlocal')
 AddEventHandler('es_bank:toofarlocal', function(robb)
 	robbing = false
-	TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "The robbery was cancelled, you will receive nothing.")
+	TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "El robo fue cancelado, no recibiras recompensa.")
 	robbingName = ""
 	secondsRemaining = 0
 	incircle = false
@@ -95,7 +108,7 @@ end)
 RegisterNetEvent('es_bank:playerdiedlocal')
 AddEventHandler('es_bank:playerdiedlocal', function(robb)
 	robbing = false
-	TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "The robbery was cancelled, you died!.")
+	TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "El robo fue cancelado, moriste!.")
 	robbingName = ""
 	secondsRemaining = 0
 	incircle = false
@@ -105,7 +118,7 @@ end)
 RegisterNetEvent('es_bank:robberycomplete')
 AddEventHandler('es_bank:robberycomplete', function(reward)
 	robbing = false
-	TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "Robbery done, you received:^2" .. reward)
+	TriggerEvent('chatMessage', 'SYSTEM', {255, 0, 0}, "Robo completado, recibiste:^2" .. reward)
 	bank = ""
 	secondsRemaining = 0
 	incircle = false
@@ -148,11 +161,11 @@ Citizen.CreateThread(function()
 		local ve = v.position
 
 		local blip = AddBlipForCoord(ve.x, ve.y, ve.z)
-		SetBlipSprite(blip, 278)
-		SetBlipScale(blip, 0.8)
+		SetBlipSprite(blip, 134)
+		SetBlipScale(blip, 1.3)
 		SetBlipAsShortRange(blip, true)
 		BeginTextCommandSetBlipName("STRING")
-		AddTextComponentString("Robbable Bank")
+		AddTextComponentString("Banco/tienda robable")
 		EndTextCommandSetBlipName(blip)
 	end
 end)

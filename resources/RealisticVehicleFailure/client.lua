@@ -9,8 +9,8 @@
 --	https://github.com/iEns/RealisticVehicleFailure
 --
 
-local deformationMultiplier = 10.0				-- How much should the vehicle visually deform from a collision. Range 0.0 to 10.0 Where 0.0 is no deformation and 10.0 is 10x deformation. -1 = Don't touch
-local weaponsDamageMultiplier = 0.01			-- How much damage should the vehicle get from weapons fire. Range 0.0 to 10.0, where 0.0 is no damage and 10.0 is 10x damage. -1 = don't touch
+local deformationMultiplier = 3.50				-- How much should the vehicle visually deform from a collision. Range 0.0 to 10.0 Where 0.0 is no deformation and 10.0 is 10x deformation. -1 = Don't touch
+local weaponsDamageMultiplier = 1.50			-- How much damage should the vehicle get from weapons fire. Range 0.0 to 10.0, where 0.0 is no damage and 10.0 is 10x damage. -1 = don't touch
 local damageFactorEngine = 10.0					-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 10
 local damageFactorBody = 10.0					-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 10
 local damageFactorPetrolTank = 64.0				-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 64
@@ -19,7 +19,7 @@ local degradingHealthSpeedFactor = 10			-- Speed of slowly degrading health, but
 local degradingFailureThreshold = 800.0			-- Below this value, slow health degradation will set in
 local cascadingFailureThreshold = 360.0			-- Below this value, health cascading failure will set in
 local engineSafeGuard = 100.0					-- Final failure value. Set it too high, and the vehicle won't smoke when disabled. Set too low, and the car will catch fire from a single bullet to the engine. At health 100 a typical car can take 3-4 bullets to the engine before catching fire.
-local displayBlips = true						-- Show blips for mechanics locations
+local displayBlips = false						-- Show blips for mechanics locations
 
 
 -- id=446 for wrench icon, id=72 for spraycan icon

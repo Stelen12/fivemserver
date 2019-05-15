@@ -6,8 +6,8 @@ lang = "en"
 settings = {}
 settings["en"] = {
 	openMenu = "Presiona ~g~E~w~ para abrir el menu.",
-	electricError = "~r~Maneja un auto electrico.",
-	fuelError = "~r~nNo tenes un auto electrico.",
+	electricError = "~r~Manejas un auto electrico.",
+	fuelError = "~r~No tenes un auto electrico.",
 	buyFuel = "Comprar gasolina",
 	liters = "Liters",
 	percent = "Percent",
@@ -18,8 +18,8 @@ settings["en"] = {
 	heliFuelStation = "Gas station helicopters",
 	getJerryCan = "Presiona ~g~E~w~ para comprar un Canister ($"..petrolCanPrice..")",
 	refeel = "Press ~g~E~w~ to feed.",
-	YouHaveBought = "Bought ",
-	fuel = " Liters of fuel",
+	YouHaveBought = "Compraste ",
+	fuel = " Litros de gadolina",
 	price = "Precio"
 }
 
@@ -58,4 +58,4 @@ text_y = 0.985
 electricityPrice = 3 -- NOT RANOMED !!
 petrolCanPrice = 20
 randomPrice = false --Random the price of each stations
-price = 2 --If random price is on False, set the price here for 1 liter
+price = 50 --If random price is on False, set the price here for 1 liter

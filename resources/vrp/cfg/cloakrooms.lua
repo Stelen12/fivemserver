@@ -4,7 +4,7 @@
 local cfg = {}
 
 -- prepare surgeries customizations
-local surgery_male = { model = "mp_m_freemode_01" }
+local surgery_male = { model = "mp_m_freemode_01_mp_m_january2016^jbib_diff_000_a_uni" }
 local surgery_female = { model = "mp_f_freemode_01" }
 local emergency_male = { model = "s_m_m_paramedic_01" }
 local fbi_male = { model = "s_m_y_swat_01" }
