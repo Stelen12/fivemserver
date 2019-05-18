@@ -247,7 +247,8 @@ cfg.groups = {
     "repair.service",
     "repair.vehicle",
     "repair.market",
-    "repair.paycheck"
+    "repair.paycheck",
+    "meca.cloakroom"
   },
   ["Mecanico - Experimentado"] = {
     _config = { gtype = "job",
@@ -256,9 +257,10 @@ cfg.groups = {
     "vehicle.repair",
     "vehicle.replace",
     "repair.service",
-    "repair.vehicle",
+    "repair.experimentado",
     "repair.market",
-    "repair.paycheck.experimentado"
+    "repair.paycheck.experimentado",
+    "meca.cloakroom"
   },
   ["Mecanico - Subjefe"] = {
     _config = { gtype = "job",
@@ -267,9 +269,10 @@ cfg.groups = {
     "vehicle.repair",
     "vehicle.replace",
     "repair.service",
-    "repair.vehicle",
+    "repair.jefe",
     "repair.market",
-    "repair.paycheck.subjefe"
+    "repair.paycheck.subjefe",
+    "meca.cloakroom"
   },
   ["Mecanico - Jefe"] = {
     _config = { gtype = "job",
@@ -278,9 +281,10 @@ cfg.groups = {
     "vehicle.repair",
     "vehicle.replace",
     "repair.service",
-    "repair.vehicle",
+    "repair.jefe",
     "repair.market",
-    "repair.paycheck.jefe"
+    "repair.paycheck.jefe",
+    "meca.cloakroom"
   },
   ["Forger"] = {
     _config = { gtype = "job",

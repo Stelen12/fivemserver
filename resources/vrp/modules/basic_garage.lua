@@ -93,7 +93,7 @@ for group,vehicles in pairs(vehicle_groups) do
     end
   end,lang.garage.owned.description()}
 
-  if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona'  then --Verificando garage
+  if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona' or group == 'Novato' or group == 'Experimentado' or group == 'Subjefe'  then --Verificando garage
     menu[lang.garage.buy.title()] = {function(player,choice)
       local user_id = vRP.getUserId(player)
       if user_id ~= nil then
@@ -188,7 +188,7 @@ for group,vehicles in pairs(vehicle_groups) do
           pvehicles[string.lower(v.vehicle)] = true
         end
 
-        if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona'  then --Verificando garage
+        if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona' or group == 'Novato' or group == 'Experimentado' or group == 'Subjefe'  then --Verificando garage
           -- for each existing vehicle in the garage group
           for k,v in pairs(pvehicles) do
             local vehicle = vehicles[k]
@@ -253,7 +253,7 @@ for group,vehicles in pairs(vehicle_groups) do
           pvehicles[string.lower(k)] = true
         end
 
-        if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona'  then --Verificando garage
+        if group == 'agente' or group == 'cabo' or group == 'cabo primero' or group == 'sargento' or group == 'sargento primero' or group == 'comisario' or group == 'Police Helicopters' or group == 'aspirante' or group == 'doctor' or group == 'cirujano' or group == 'coordinador' or group == 'jefe de zona' or group == 'Novato' or group == 'Experimentado' or group == 'Subjefe'  then --Verificando garage
           -- for each existing vehicle in the garage group
           for k,v in pairs(vehicles) do
             if k ~= "_config" and pvehicles[string.lower(k)] == nil then -- not already owned

@@ -352,8 +352,8 @@ cfg.garage_types = {
     ["ambulance"] = {"Ambulancia",5000, ""}
   },
   ["EMS Helicopters"] = {
-    _config = {vtype="car",blipid=43,blipcolor=1,radius=5.1,permissions={"emergency.vehicle"}},
-    ["supervolito2"] = {"EMS",0, "emergency"}
+    _config = {vtype="car",blipid=43,blipcolor=1,radius=5.1,permissions={"emergency.helicoptero"}},
+    ["polmav"] = {"Helicoptero SAME",0, "emergency"}
   },
    ["Mafia Garage"] = {
     _config = {vtype="car",blipid=50,blipcolor=3,permissions={"mafia.vehicle"}},
@@ -395,10 +395,24 @@ cfg.garage_types = {
     -- _config = {vtype="bike",blipid=85,blipcolor=31,permissions={"santa.vehicle"}},
     -- ["hydra"] = {"Santa's Sled",0, "hydra"}
   -- },  
-  ["repair"] = {
+  ["Novato"] = {
     _config = {vtype="car",blipid=50,blipcolor=31,permissions={"repair.vehicle"}},
-    ["towtruck2"] = {"towtruck2",0, "towtruck2"},
-	["utillitruck3"] = {"Utility Truck",0, "utillitruck3"}
+    ["flatbed"] = {"Camion",1000, ""},
+	  ["towtruck"] = {"Grua",2000, ""}
+  },
+  ["Experimentado"] = {
+    _config = {vtype="car",blipid=50,blipcolor=31,permissions={"repair.experimentado"}},
+    ["flatbed"] = {"Camion",1000, ""},
+    ["towtruck"] = {"Grua",2000, ""},
+    ["towtruck2"] = {"Grua 2",5000, ""},
+    ["towtruck2"] = {"Grua 2",5000, ""},
+  },
+  ["Subjefe"] = {
+    _config = {vtype="car",blipid=50,blipcolor=31,permissions={"repair.jefe"}},
+    ["flatbed"] = {"Camion",1000, ""},
+    ["towtruck"] = {"Grua",2000, ""},
+    ["towtruck2"] = {"Grua 2",55000, ""},
+    ["vr46"] = {"Ducati Desmosedici",100000, ""}
   },
   ["bankdriver"] = {
     _config = {vtype="car",blipid=67,blipcolor=4,permissions={"bankdriver.vehicle"}},
@@ -447,7 +461,9 @@ cfg.garages = {
   {"uber",907.38049316406,-175.86546325684,74.130157470703}, -- jobs garage
   {"Lawyer",-1900.7344970703,-560.89245605469,11.802397727966},-- jobs garage
   {"delivery",964.514770507813,-1020.13879394531,40.8475074768066},   -- jobs garage
-  {"repair",401.42602539063,-1631.7053222656,29.291942596436},   -- jobs garage
+  {"Novato",401.42602539063,-1631.7053222656,29.291942596436},   -- jobs garage
+  {"Experimentado",401.42602539063,-1631.7053222656,29.291942596436},   -- jobs garage
+  {"Subjefe",401.42602539063,-1631.7053222656,29.291942596436},   -- jobs garage
   {"bankdriver",222.68756103516,222.95631408691,105.41331481934},   -- jobs garage
   {"House Garage",-638.08142089844,56.500617980957,43.794803619385},  -- house garage
   {"House Garage",-1457.4909667969,-500.61614990234,32.202766418457},

@@ -4,7 +4,7 @@
 local cfg = {}
 
 -- prepare surgeries customizations
-local surgery_male = { model = "mp_m_freemode_01_mp_m_january2016^jbib_diff_000_a_uni" }
+local surgery_male = { model = "mp_m_freemode_01" }
 local surgery_female = { model = "mp_f_freemode_01" }
 local emergency_male = { model = "s_m_m_paramedic_01" }
 local fbi_male = { model = "s_m_y_swat_01" }
@@ -21,7 +21,7 @@ local captain_male = { model = "s_m_y_fibcop_01"}
 local lieutenant_male = { model = "s_m_y_hwaycop_01"}
 local sergeant_male = { model = "s_m_y_swat_01"}
 local deputy_male = { model = "s_m_y_ranger_01"}
-local chief_male = {model = "s_m_m_ciasec_01"}
+local meca = {model = "s_m_y_construct_02"}
 local santa = {model = "Santaclaus"}
 
 --s_m_m_paramedic_01
@@ -83,9 +83,9 @@ cfg.cloakroom_types = {
     ["Male"] = surgery_male,
     ["Female"] = surgery_female
   },
-  ["mecanico"] = {
-    _config = { not_uniform = true },
-    ["Male"] = surgery_male,
+  ["Mecanico"] = {
+    _config = { permissions = {"meca.cloakroom"} },
+    ["Mecanico"] = meca,
   },
    -- ["Santa"] = {
     -- _config = { permissions = {"santa.cloakroom"} },
@@ -154,7 +154,8 @@ cfg.cloakrooms = {
   {"surgery",620.459167480469,2766.82641601563,42.0881042480469},
   {"surgery",1196.89221191406,2710.220703125,38.2226066589355},
   {"surgery",-3178.01000976563,1043.21044921875,20.8632164001465},
-  {"mecanico",-1101.15161132813,2710.8203125,19.1078643798828},
+  {"surgery",-1101.15161132813,2710.8203125,19.1078643798828},
+  {"Mecanico",419.21081542969,-1631.2072753906,29.291929244995},
   {"emergency",244.1099395752,-1382.8720703125,39.534328460693}
   -- {"Santa",-1373.0778808594,-2677.6694335938,13.944942474365} -- Santa's Cloakroom (Disabled)
 }

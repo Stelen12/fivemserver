@@ -13,56 +13,56 @@ local lang = {
     not_allowed = "~r~Not allowed."
   },
   weapon = {
-    pistol = "Pistol"
+    pistol = "Pistola"
   },  
   survival = {
-    starving = "starving",
-    thirsty = "thirsty"
+    starving = "Hambriento",
+    thirsty = "Sediento"
   },
   money = {
     display = "<span class=\"symbol\">$</span> {1}",
     bdisplay = "<span class=\"symbol\">$</span> {1}",
-    given = "Given ~r~{1}$.",
-    received = "Received ~g~{1}$.",
-    not_enough = "~r~Not enough money.",
-    paid = "Paid ~r~{1}$.",
+    given = "Diste ~r~{1}$.",
+    received = "Recibiste ~g~{1}$.",
+    not_enough = "~r~No tienes dinero suficiente.",
+    paid = "Pagaste ~r~{1}$.",
     give = {
-      title = "Give money",
-      description = "Give money to the nearest player.",
-      prompt = "Amount to give:"
+      title = "Dar dinero",
+      description = "Dar dinero al jugador mas cercano.",
+      prompt = "Monto a entrgar:"
     }
   },
   inventory = {
-    title = "Inventory",
-    description = "Open the inventory.",
+    title = "Inventario",
+    description = "Abrir inventario.",
     iteminfo = "({1})<br /><br />{2}<br /><em>{3} kg</em>",
-    info_weight = "weight {1}/{2} kg",
+    info_weight = "Peso {1}/{2} kg",
     give = {
-      title = "Give",
-      description = "Give items to the nearest player.",
-      prompt = "Amount to give (max {1}):",
-      given = "Given ~r~{1} ~s~{2}.",
-      received = "Received ~g~{1} ~s~{2}.",
+      title = "Dar",
+      description = "Dar objetos al jugador mas cercano.",
+      prompt = "Monto a entrgar (max {1}):",
+      given = "Diste ~r~{1} ~s~{2}.",
+      received = "Recidibiste ~g~{1} ~s~{2}.",
     },
     trash = {
-      title = "Trash",
-      description = "Destroy items.",
+      title = "Basura",
+      description = "Destruir objetos.",
       prompt = "Amount to trash (max {1}):",
       done = "Trashed ~r~{1} ~s~{2}."
     },
     missing = "~r~Missing {2} {1}.",
-    full = "~r~Inventory full.",
+    full = "~r~Inventario lleno.",
     chest = {
-      title = "Chest",
-      already_opened = "~r~This chest is already opened by someone else.",
-      full = "~r~Chest full.",
+      title = "Cofre",
+      already_opened = "~r~Este cofre ya esta abierto por alguna persona.",
+      full = "~r~Cofre lleno.",
       take = {
-        title = "Take",
-        prompt = "Amount to take (max {1}):"
+        title = "Agarrar",
+        prompt = "Cantidad a agarrar (max {1}):"
       },
       put = {
-        title = "Put",
-        prompt = "Amount to put (max {1}):"
+        title = "Poner",
+        prompt = "Cantidad a poner (max {1}):"
       }
     }
   },
@@ -70,20 +70,20 @@ local lang = {
     title = "ATM",
     info = {
       title = "Info",
-      bank = "bank: {1} $"
+      bank = "Banco: {1} $"
     },
     deposit = {
-      title = "Deposit",
-      description = "wallet to bank",
-      prompt = "Enter amount of money for deposit:",
-      deposited = "~r~{1}$~s~ deposited."
+      title = "Depositar",
+      description = "Mercado al banco",
+      prompt = "Ingresar el monto del deposito:",
+      deposited = "~r~{1}$~s~ depositado."
     },
     withdraw = {
-      title = "Withdraw",
-      description = "bank to wallet",
+      title = "Retirar",
+      description = "Banco al mercado",
       prompt = "Enter amount of money to withdraw:",
-      withdrawn = "~g~{1}$ ~s~withdrawn.",
-      not_enough = "~r~You don't have enough money in bank."
+      withdrawn = "~g~{1}$ ~s~retirado.",
+      not_enough = "~r~No tienes dinero suficiente en el banco."
     }
   },
   business = {
@@ -124,34 +124,34 @@ local lang = {
   cityhall = {
     title = "City Hall",
     identity = {
-      title = "New identity",
-      description = "Create a new identity, cost = {1} $.",
-      prompt_firstname = "Enter your First name:",
-      prompt_name = "Enter your Last name:",
-      prompt_age = "Enter your age:",
+      title = "Nueva identidad",
+      description = "Crear nueva identidad, costo = {1} $.",
+      prompt_firstname = "Ingresa tu primer nombre:",
+      prompt_name = "Ingresa tu apellido:",
+      prompt_age = "Ingresa tu edad:",
     },
     menu = {
-      title = "Identity",
-      info = "<em>First name: </em>{2}<br /><em>Last name: </em>{1}<br /><em>Age: </em>{3}<br /><em>Registration n°: </em>{4}<br /><em>Phone: </em>{5}<br /><em>Address: </em>{7}, {6}"
+      title = "Identidad",
+      info = "<em>Primer nombre: </em>{2}<br /><em>Apellido: </em>{1}<br /><em>Edad: </em>{3}<br /><em>n° de registro: </em>{4}<br /><em>Celular: </em>{5}<br /><em>Direccion: </em>{7}, {6}"
     }
   },
   police = {
-    title = "Police",
-    wanted = "Wanted rank {1}",
-    not_handcuffed = "~r~Not handcuffed",
+    title = "Polica",
+    wanted = "Nivel de busqueda {1}",
+    not_handcuffed = "~r~No esposado",
     cloakroom = {
-      title = "Cloakroom",
+      title = "Vestidor",
       uniform = {
-        title = "Uniform",
-        description = "Put uniform."
+        title = "Uniforme",
+        description = "Poner uniforme."
       }
     },
     pc = {
       title = "PC",
       searchreg = {
-        title = "Registration search",
-        description = "Search identity by registration.",
-        prompt = "Enter registration number:"
+        title = "Busqueda de indentidad",
+        description = "Buscar indentidad.",
+        prompt = "Ingresar el numero de registro:"
       },
       closebusiness = {
         title = "Close business",
@@ -160,7 +160,7 @@ local lang = {
         closed = "~g~Business closed."
       },
       trackveh = {
-        title = "Track vehicle",
+        title = "Buscar vehiculo",
         description = "Track a vehicle by its registration number.",
         prompt_reg = "Enter registration number:",
         prompt_note = "Enter a tracking note/reason:",
@@ -182,26 +182,26 @@ local lang = {
     },
     menu = {
       handcuff = {
-        title = "Handcuff",
-        description = "Handcuff/unhandcuff nearest player."
+        title = "Espocar",
+        description = "Esposar/Desesposar jugador cercano."
       },
       putinveh = {
-        title = "Put in vehicle",
-        description = "Put the nearest handcuffed player in the nearest vehicle, as passenger."
+        title = "Meter al auto",
+        description = "Meter al jugador esposado mas cercano al vehiculo, como pasajero."
       },
       getoutveh = {
-        title = "Get out vehicle",
-        description = "Get out of vehicle the nearest handcuffed player."
+        title = "Sacar del auto",
+        description = "Sacar al jugador mas cercano al vehiculo."
       },
       askid = {
-        title = "Ask ID",
-        description = "Ask ID card from the nearest player.",
-        request = "Do you want to give your ID card ?",
-        request_hide = "Hide the ID card.",
+        title = "Pedir Identificacion",
+        description = "Pedir Identificacion al jugador mas cercano.",
+        request = "Quieres dar tu identificacion ?",
+        request_hide = "Esconder identificacion.",
         asked = "Asking ID..."
       },
       check = {
-        title = "Check player",
+        title = "Cachear jugador",
         description = "Check money, inventory and weapons of the nearest player.",
         request_hide = "Hide the check report.",
         info = "<em>money: </em>{1} $<br /><br /><em>inventory: </em>{2}<br /><br /><em>weapons: </em>{3}",
@@ -221,20 +221,20 @@ local lang = {
         }
       },
       jail = {
-        title = "Jail",
-        description = "Jail/UnJail nearest player in/from the nearest jail.",
-        not_found = "~r~No jail found.",
-        jailed = "~b~Jailed.",
-        unjailed = "~b~Unjailed.",
-        notify_jailed = "~b~You have been jailed.",
-        notify_unjailed = "~b~You have been unjailed."
+        title = "Encarcelar",
+        description = "Encarcelar/Desencarcelar al jugador mas cercadno.",
+        not_found = "~r~No se encontro carcel.",
+        jailed = "~b~Encarcelado.",
+        unjailed = "~b~Desencarcelado.",
+        notify_jailed = "~b~Has sido encarcelado.",
+        notify_unjailed = "~b~Has sido desencarcelado."
       },
       fine = {
-        title = "Fine",
-        description = "Fine the nearest player.",
-        fined = "~b~Fined ~s~{2} $ for ~b~{1}.",
-        notify_fined = "~b~You have been fined ~s~ {2} $ for ~b~{1}.",
-        record = "[Fine] {2} $ for {1}"
+        title = "Multar",
+        description = "Multar al jugador mas cercano.",
+        fined = "~b~Multado ~s~{2} $ por ~b~{1}.",
+        notify_fined = "~b~Has sido multado ~s~ {2} $ por ~b~{1}.",
+        record = "[Fine] {2} $ por {1}"
       },
       store_weapons = {
         title = "Store weapons",
@@ -242,7 +242,7 @@ local lang = {
       }
     },
     identity = {
-      info = "<em>Name: </em>{1}<br /><em>First name: </em>{2}<br /><em>Age: </em>{3}<br /><em>Registration n°: </em>{4}<br /><em>Phone: </em>{5}<br /><em>Business: </em>{6}<br /><em>Business capital: </em>{7} $<br /><em>Address: </em>{9}, {8}"
+      info = "<em>Nombre: </em>{1}<br /><em>Primer nombre: </em>{2}<br /><em>Edad: </em>{3}<br /><em>n° de registro: </em>{4}<br /><em>Celular: </em>{5}<br /><em>Empresa: </em>{6}<br /><em>Capital Empresa: </em>{7} $<br /><em>Direccion: </em>{9}, {8}"
     }
   },
   emergency = {
