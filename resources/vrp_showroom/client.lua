@@ -152,6 +152,7 @@ local vehshop = {
 				{name = "Passat", costs = 800000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "passat"},
 				{name = "Saveiro", costs = 60000 , speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "sadler"},
 				{name = "Scirocco", costs = 1000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "prairie"},
+				{name = "Amarok V6", costs = 450000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "amarok"},
 		
 			}
 		},
@@ -285,7 +286,7 @@ local vehshop = {
 			title = "Ducati",
 			name = "Ducati",
 			buttons = {
-				{name = "Hypermotard", costs = 250000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bati"},
+				{name = "Hypermotard", costs = 100000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "bati"},
 				{name = "Panigale", costs = 200000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "panigale"},	
 			}
 		},
@@ -308,6 +309,7 @@ local vehshop = {
 			name = "Yamaha",
 			buttons = {
 				{name = "ZX 10", costs = 150000, speed = 70, acce = 80, brake = 60, trac = 30, description = {}, model = "zx10r"},
+				{name = "R6", costs = 250000, speed = 70, acce = 80, brake = 60, trac = 30, description = {}, model = "yzfr6"},
 			}
 		},
 		["Honda"] = {
