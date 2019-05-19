@@ -187,8 +187,6 @@ vehshop = {
 				{name = "Punto", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gresley"},
 			}
 		},
-			}
-		},
 
 		-------------------Motos----------------------
 		["Motos"] = {

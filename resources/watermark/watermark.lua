@@ -1,7 +1,7 @@
 -- CONFIG --
 
 -- The watermark text --
-servername = "Server de roleplay - discord.gg/6WGTAB"
+servername = "FALOPEROS RP - discord.gg/FtbaXG"
 
 -- The x and y offset (starting at the top left corner) --
 -- Default: 0.005, 0.001

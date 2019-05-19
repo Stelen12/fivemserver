@@ -18,11 +18,11 @@ local police = {}
 local ch_police = {function(player,choice)
 	local user_id = vRP.getUserId({player})
 	local menu = {}
-	menu.name = "Police Interaction"
+	menu.name = "Interaccion policial"
 	menu.css = {top = "75px", header_color = "rgba(0,0,255,0.75)"}
     menu.onclose = function(player) vRP.openMainMenu({player}) end -- nest menu
 	
-	menu["Cone"] = {function(player,choice)
+	menu["Conos"] = {function(player,choice)
 		PMclient.isCloseToCone(player,{},function(closeby)
 		if closeby and (police[player] or vRP.hasPermission({user_id,"police.menu_interaction"})) then
 		  PMclient.removeCone(player,{})
@@ -34,7 +34,7 @@ local ch_police = {function(player,choice)
 	  end)
 	end}
 	
-	menu["Barrier"] = {function(player,choice)
+	menu["Barreras"] = {function(player,choice)
 		PMclient.isCloseToBarrier(player,{},function(closeby)
 		if closeby and (police[player] or vRP.hasPermission({user_id,"police.menu_interaction"})) then
 		  PMclient.removeBarrier(player,{})
@@ -46,7 +46,7 @@ local ch_police = {function(player,choice)
 	  end)
 	end}	
 	
-	menu["Barrier2"] = {function(player,choice)
+	menu["Barreras2"] = {function(player,choice)
 		PMclient.isCloseToBarrier2(player,{},function(closeby)
 		if closeby and (police[player] or vRP.hasPermission({user_id,"police.menu_interaction"})) then
 		  PMclient.removeBarrier2(player,{})
@@ -58,7 +58,7 @@ local ch_police = {function(player,choice)
 	  end)
 	end}
 	
-	menu["Spikes"] = {function(player,choice)
+	menu["Pinchos"] = {function(player,choice)
 		PMclient.isCloseToSpikes(player,{},function(closeby)
 		if closeby and (police[player] or vRP.hasPermission({user_id,"police.menu_interaction"})) then
 		  PMclient.removeSpikes(player,{})
@@ -70,7 +70,7 @@ local ch_police = {function(player,choice)
 	  end)
 	end}	
 	vRP.openMenu({player, menu})
-end, "Police Interaction."}
+end, "Interaccion policial."}
 
 
 -- REGISTER MAIN MENU CHOICES
@@ -80,7 +80,7 @@ vRP.registerMenuBuilder({"main", function(add, data)
     local choices = {}
 	
 	if vRP.hasPermission({user_id,"police.menu_interaction"}) then
-      choices["Police Interaction"] = ch_police
+      choices["Interaccion policial"] = ch_police
     end
 	
     add(choices)
