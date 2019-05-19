@@ -127,7 +127,7 @@ local vehshop = {
 			title = "Audi",
 			name = "Audi",
 			buttons = {
-				{name = "A4", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "aaq4"},
+				{name = "A4", costs = 550000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "aaq4"},
 				{name = "R8", costs = 1500000, speed = 60, acce = 60, brake = 60, trac = 30, description = {}, model = "r8ppi"},
 			}
 		},
@@ -171,7 +171,6 @@ local vehshop = {
 			name = "Peugeot",
 			buttons = {
 				{name = "208", costs = 70000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "208"},
-				{name = "RcZ", costs = 450000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rcz16"},
 			}
 		},
 		["Renault"] = {
@@ -187,8 +186,9 @@ local vehshop = {
 			title = "Chevrolet",
 			name = "Chevrolet",
 			buttons = {
-				{name = "Camaro", costs = 2000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "ccss16"},
+				{name = "Camaro", costs = 4000000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "ccss16"},
 				{name = "Antigua", costs = 350000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "proc10"},
+				{name = "Chevy", costs = 350000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "manana"},
 			}
 		},
 		["Ford"] = {
@@ -262,11 +262,6 @@ local vehshop = {
 				{name = "Punto", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gresley"},
 			}
 		},
-		["Range"] = {
-			title = "Range",
-			name = "Range",
-			buttons = {
-				{name = "Rover", costs = 600000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "rrstart"},
 			}
 		},
 
