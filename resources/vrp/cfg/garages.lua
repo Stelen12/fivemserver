@@ -89,12 +89,12 @@ cfg.garage_types = {
     ["passat"] = {"Volkswagen Passat",1000000, ""},
     ["gresley"] = {"Fiat Punto",1000000, ""},
     ["proc10"] = {"Chevrolet Antigua",1000000, ""},
-    ["rrstart"] = {"Range Rover",1000000, ""},
-    ["rcz16"] = {"Peugeot Rcz",1000000, ""},
     ["asea"] = {"Renault 9",1000000, ""},
     ["sadler"] = {"Volkswagen Saveiro Tunning",1000000, ""},
     ["lamtmc"] = {"Lamborgini Terzo Milennio",1000000, ""},
     ["zx10r"] = {"Zx",1000000, ""},
+    ["amarok"] = {"Volkswagen Amarok V6",1000000, ""},
+    ["yzfr6"] = {"Yamaha R6",1000000, ""},
 
 
   },
@@ -274,12 +274,12 @@ cfg.garage_types = {
     ["passat"] = {"Volkswagen Passat",1000000, ""},
     ["gresley"] = {"Fiat Punto",1000000, ""},
     ["proc10"] = {"Chevrolet Antigua",1000000, ""},
-    ["rrstart"] = {"Range Rover",1000000, ""},
-    ["rcz16"] = {"Peugeot Rcz",1000000, ""},
     ["asea"] = {"Renault 9",1000000, ""},
     ["sadler"] = {"Volkswagen Saveiro Tunning",1000000, ""},
     ["lamtmc"] = {"Lamborgini Terzo Milennio",1000000, ""},
     ["zx10r"] = {"Zx",1000000, ""},
+    ["amarok"] = {"Volkswagen Amarok V6",1000000, ""},
+    ["yzfr6"] = {"Yamaha R6",1000000, ""},
   },
   
   ["agente"] = {
