@@ -262,8 +262,6 @@ local vehshop = {
 				{name = "Punto", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gresley"},
 			}
 		},
-			}
-		},
 
 		-------------------Motos----------------------
 		["Motos"] = {
@@ -921,6 +919,8 @@ function vehSR_ButtonSelected(button)
 			vehSR_OpenMenu('Nissan')
 		elseif btn == "Porsche" then
 			vehSR_OpenMenu('Porsche')
+		elseif btn == "Lamborgini" then
+			vehSR_OpenMenu('Lamborgini')
 		elseif btn == "Chevrolet" then
 			vehSR_OpenMenu('Chevrolet')
 		elseif btn == "Jeep" then

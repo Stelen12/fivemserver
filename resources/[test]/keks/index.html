@@ -2,18 +2,29 @@
     <head>
         <link href="keks.css" rel="stylesheet" type="text/css" />
     </head>
+
+    <style>#selector {width:100%; height:100%;}</style>
+        <div class="video-container"><iframe src="https://www.youtube.com/embed/UjH6waMaBd4?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+
     <body>
+        <audio id="Loading" autoplay loop >
+         <source src="music/Loading.ogg" type="audio/ogg">
+        </audio>
+    <script>
+     var vid = document.getElementById("Loading");
+     vid.volume = 0.1
+    </script>
         <div class="backdrop">
             <div class="top">
-                <h1 title="Free Mode">Free Mode</h1>
-                <h2 title="Not Algonquin">Not Algonquin</h2>
+                <h1 title=""></h1>
+                <h2 title=""></h2>
             </div>
 
             <div class="letni">
-                <h2 title="INTEL">Intel</h2>
+                <h2 title="Loading...">Loading...</h2>
                 <h3></h3>
                 <div class="loadbar"><div class="thingy"></div></div>
-                <p>The Statue of Happiness has no heart. You do.</p>
+                <p>Under Development</p>
             </div>
             <div class="bottom">
                 <div id="gradient">
@@ -23,14 +34,14 @@
 
 <script type="text/javascript">
 // this will actually restart the loading bar a lot, making multiple loading bars is an exercise to the reader... for now.
-// for a set of possible events, see https://github.com/citizenfx/fivem/blob/master/code/components/loading-screens-five/src/LoadingScreens.cpp
+// for a set of possible events, see https://github.com/citizenfx/cfx-client/blob/up-master/components/loading-screens-five/src/LoadingScreens.cpp
 var count = 0;
 var thisCount = 0;
 
 const emoji = {
-    INIT_BEFORE_MAP_LOADED: [ '🍉' ],
-    INIT_AFTER_MAP_LOADED: [ '🍋', '🍊' ],
-    INIT_SESSION: [ '🍐', '🍅', '🍆' ],
+    INIT_BEFORE_MAP_LOADED: [ '🐌' ],
+    INIT_AFTER_MAP_LOADED: [ '🐘', '🐤' ],
+    INIT_SESSION: [ '💲', '💳', '📌' ],
 };
 
 const handlers = {

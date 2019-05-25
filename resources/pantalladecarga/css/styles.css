@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Monoton', cursive;
+}
+body{
+  overflow: hidden;
+}
+#cursor {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  z-index: 98;
+}
+div.img{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    z-index: -2;
+}
+div.img img{
+    width: 100%;
+    height: auto;
+}
+.black-shadow{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: black; 
+    /* rgb(136, 19, 146); */
+    opacity: .5;
+    z-index: -1;
+}
+.content{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    color:rgb(255,255,255);
+    letter-spacing: 1px;
+}
+.content .logo{
+    padding:50px 35px;
+    /* background: rgba(255, 255, 255, 0.4); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+.content .logo img.log{
+    margin-top: -30px;
+    vertical-align: top;
+    height: 400px;
+    width: auto;
+}
+.content .logo .title{
+  position: absolute;
+  top:45%;
+  left:12%;
+  opacity: .94;
+}
+.song{
+    position: absolute;
+    z-index:3;
+    display:flex;
+    align-items: center;
+    color:white;
+    padding:20px;
+    margin-left:20px;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    z-index:999;
+}
+.song>p{
+    font-size: 22px;
+}
+.song .controls{
+    display:flex;
+    padding: 0 10px;
+}
+.song .controls i{
+    padding:0 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.song .controls input{
+    margin-left: 20px;
+}
+
+
+
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 3.5px 0;
+    opacity: .7;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #46262c;
+    border-radius: 0px;
+    border: 0px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1.8px 1.8px 5.9px rgba(255, 0, 0, 0.49), 0px 0px 1.8px rgba(255, 26, 26, 0.49);
+    border: 2.9px solid #941e00;
+    height: 19px;
+    width: 25px;
+    border-radius: 16px;
+    background: rgba(255, 48, 56, 0.93);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #673841;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #46262c;
+    border-radius: 0px;
+    border: 0px solid #010101;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1.8px 1.8px 5.9px rgba(255, 0, 0, 0.49), 0px 0px 1.8px rgba(255, 26, 26, 0.49);
+    border: 2.9px solid #941e00;
+    height: 19px;
+    width: 25px;
+    border-radius: 16px;
+    background: rgba(255, 48, 56, 0.93);
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #251417;
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #46262c;
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 1.8px 1.8px 5.9px rgba(255, 0, 0, 0.49), 0px 0px 1.8px rgba(255, 26, 26, 0.49);
+    border: 2.9px solid #941e00;
+    height: 19px;
+    width: 25px;
+    border-radius: 16px;
+    background: rgba(255, 48, 56, 0.93);
+    cursor: pointer;
+    height: 12px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #46262c;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #673841;
+  }
+  

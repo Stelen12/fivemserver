@@ -79,7 +79,7 @@ AddEventHandler("vRP:playerSpawn",function(user_id,source,first_spawn)
 end)
 
 AddEventHandler("vRP:playerLeave",function(user_id, source) -- asta cred ca mere
---AddEventHandler("playerLeave", function() -- asta nu merge
+--AddEventHandler("playerLeave", function() -- asta nu mergex
     local user_id = vRP.getUserId({source})
     for _, v in pairs(same_grades) do 
         if vRP.hasGroup({user_id, v}) then

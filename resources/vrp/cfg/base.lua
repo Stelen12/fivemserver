@@ -3,10 +3,10 @@ local cfg = {}
 
 -- mysql credentials
 cfg.db = {
-  host = "127.0.0.1", -- database ip (default is local)
-  database = "server",   -- name of database
-  user = "root",    --  database username
-  password = ""   -- password of your database
+  host = "mysql-mariadb-dal01-9-101.zap-hosting.com", -- database ip (default is local)
+  database = "zap419528-1",   -- name of database
+  user = "zap419528-1",    --  database username
+  password = "xBvyTY95Qki7DTzZ"   -- password of your database
 }
 
 cfg.save_interval = 30 -- seconds
