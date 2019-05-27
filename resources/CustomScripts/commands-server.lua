@@ -17,13 +17,13 @@ AddEventHandler('chatMessage', function(source, name, msg)
                 end
             end})
         end
-    elseif msg:sub(1,3) == "/do" then
+    elseif msg:sub(1,4) == "/do" then
         CancelEvent()
         local user_id = vRP.getUserId({source})
         if user_id ~= nil then
             vRP.getUserIdentity({user_id, function(identity)
                 if identity ~= nil then
-                    TriggerClientEvent('chatMessage', -1, "DO | " ..identity.firstname.. " "..identity.name, { 255, 0, 0 }, msg:sub(4))
+                    TriggerClientEvent('chatMessage', -1, "^6do | "..identity.firstname.. " "..identity.name, { 10, 205, 245 }, msg:sub(5))
                 end
             end})
         end
