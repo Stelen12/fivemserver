@@ -98,7 +98,7 @@ cfg.bankdriver = {
   },
   ["mission.bankdriver.moneybank2"] = {
     chance = 5,
-    title = "Bank Driver",
+    title = "Transportar dinero",
     steps = 1,
     positions = {
       {-161.13385009766,-860.69409179688,29.488040924072},
@@ -179,11 +179,11 @@ local common_fisher_positions = {
 
 cfg.fisherman = {
   ["mission.delivery.fish"] = {
-	title = "Fishing",
+	title = "Pescar",
     positions = common_fisher_positions,
     items = {
-      ["bass"] = {4,12,550},
-	    ["catfish"] = {4,12,550}
+      ["pejerrey"] = {4,12,550},
+	    ["pezgato"] = {4,12,550}
     }
   }
 }
@@ -213,10 +213,10 @@ local common_medical_positions = {
 
 cfg.medical_driver = {
   ["mission.delivery.medical"] = {
-	title = "Medical Delivery",
+	title = "Transporte medicinal",
     positions = common_medical_positions,
     items = {
-      ["Medical Weed"] = {10,22,550}
+      ["Medical Weed"] = {10,22,450}
     }
   }
 }
@@ -244,7 +244,7 @@ local common_pilot_positions = {
 
 cfg.pilot = {
   ["mission.pilot.cargo"] = {
-	title = "Airline Cargo",
+	title = "Transporte de cargas",
     positions = common_pilot_positions,
     items = {
       ["cargo"] = {10,20,450}
@@ -285,7 +285,7 @@ cfg.ups = {
   ["mission.delivery.parcels"] = {
     positions = common_ups_positions,
     items = {
-      ["parcels"] = {10,20,500}
+      ["parcels"] = {10,20,400}
     }
   }
 }
@@ -298,7 +298,7 @@ cfg.trash = {
   ["mission.collect.trash"] = {
     positions = common_trash_positions,
     items = {
-      ["trash"] = {10,20,400}
+      ["trash"] = {10,20,350}
     }
   }
 }

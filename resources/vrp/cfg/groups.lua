@@ -85,7 +85,7 @@ cfg.groups = {
   },
   ["Pescador"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos pescador."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos pescador, Salario: $2500."}) end
 	},
 	  "mission.delivery.fish",
     "fisher.service",
@@ -93,7 +93,7 @@ cfg.groups = {
     },
   ["Piloto de carga"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos un piloto de carga. Salario: $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un piloto de carga. Salario: $2500."}) end
 	},
 	"mission.pilot.cargo",
 	"pilot.vehicle",
@@ -139,7 +139,7 @@ cfg.groups = {
     },
   ["SAME - Aspirante"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos Aspirante, salario : $5000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Aspirante, salario : $7500."}) end
 	},
     "emergency.revive",
 	--"police.wanted",
@@ -154,12 +154,11 @@ cfg.groups = {
     --"player.list",
     "police.menu_interaction",
     "emsChief.paycheck",
-    "player.blips",
-    "ems.mission"
+    "player.blips"
   },
   ["SAME - Doctor"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos Doctor, salario : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Doctor, salario : $9000."}) end
 	},
     "emergency.revive",
 	--"police.wanted",
@@ -174,12 +173,11 @@ cfg.groups = {
     --"player.list",
     "police.menu_interaction",
     "emsMedic.paycheck",
-    "player.blips",
-    "ems.mission"
+    "player.blips"
   },
   ["SAME - Cirujano"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos Cirujano, salario : $3000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Cirujano, salario : $10000."}) end
 	},
     "emergency.revive",
 	"police.pc",
@@ -195,12 +193,11 @@ cfg.groups = {
 	--"player.list",
 	"police.menu_interaction",
 	"emsLieutenant.paycheck",
-	"player.blips",
-	"ems.mission"
+	"player.blips"
   },
   ["SAME - Coordinador"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos Coordinador, salario : $2500."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Coordinador, salario : $12000."}) end
 	},
     "emergency.revive",
 	--"police.wanted",
@@ -215,12 +212,11 @@ cfg.groups = {
 	--"player.list",
 	"police.menu_interaction",
 	"emsSearchRescue.paycheck",
-	"player.blips",
-	"ems.mission"
+	"player.blips"
   },
   ["SAME - Jefe de zona"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos Jefe de zona, salario : $2500."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos Jefe de zona, salario : $14000."}) end
 	},
     "emergency.revive",
 	--"police.wanted",
@@ -235,12 +231,11 @@ cfg.groups = {
 	--"player.list",
 	"police.menu_interaction",
 	"jefe.paycheck",
-	"player.blips",
-	"ems.mission"
+	"player.blips"
   },
   ["Mecanico - Novato"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $6500."}) end
 	},
     "vehicle.repair",
     "vehicle.replace",
@@ -252,7 +247,7 @@ cfg.groups = {
   },
   ["Mecanico - Experimentado"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $8000."}) end
 	},
     "vehicle.repair",
     "vehicle.replace",
@@ -264,7 +259,7 @@ cfg.groups = {
   },
   ["Mecanico - Subjefe"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $10000."}) end
 	},
     "vehicle.repair",
     "vehicle.replace",
@@ -276,7 +271,7 @@ cfg.groups = {
   },
   ["Mecanico - Jefe"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Sos un mecanico, salario : $13000."}) end
 	},
     "vehicle.repair",
     "vehicle.replace",
@@ -295,7 +290,7 @@ cfg.groups = {
   },
   ["UBER"] = {
     _config = { gtype = "job",
-	onspawn = function(player) vRPclient.notify(player,{"You are UBER, PRESS DEL TO START MISSIONS. Salary : $2000."}) end
+	onspawn = function(player) vRPclient.notify(player,{"Eres UBER, espera a ser llamado. Salary : $5000."}) end
 	},
     "uber.service",
     "uber.vehicle",
@@ -304,7 +299,7 @@ cfg.groups = {
   },
   ["Correo"] = {
     _config = { gtype = "job",
-	  onspawn = function(player) vRPclient.notify(player,{"Sos un empleado del correo, Salario: $2000."}) end
+	  onspawn = function(player) vRPclient.notify(player,{"Sos un empleado del correo, Salario: $2500."}) end
 	},
     "ups.cloakroom",
     "harvest.parcels",
@@ -325,7 +320,7 @@ cfg.groups = {
   },
   ["Delivery"] = {
     _config = { gtype = "job",
-	  onspawn = function(player) vRPclient.notify(player,{"Sos un delivery, Salario : $2000."}) end
+	  onspawn = function(player) vRPclient.notify(player,{"Sos un delivery, Salario : $2500."}) end
 	},
 	"mission.delivery.food",
 	"delivery.vehicle",
@@ -333,7 +328,7 @@ cfg.groups = {
   },
   ["Recolector de basura"] = {
     _config = { gtype = "job",
-	  onspawn = function(player) vRPclient.notify(player,{"Sos un recolector de basura, Salario : $2000."}) end
+	  onspawn = function(player) vRPclient.notify(player,{"Sos un recolector de basura, Salario : $2300."}) end
 	},
 	"mission.collect.trash", -- mission permission
 	"trash.vehicle", -- garage permission
@@ -376,7 +371,7 @@ cfg.groups = {
   },
   ["Transportista de dinero"] = {
     _config = { gtype = "job",
-	  onspawn = function(player) vRPclient.notify(player,{"Sos un Transportista de dinero. Salary: $2000."}) end
+	  onspawn = function(player) vRPclient.notify(player,{"Sos un Transportista de dinero. Salary: $2500."}) end
 	},
 	"mission.bankdriver.moneybank",
 	"mission.bankdriver.moneybank2",

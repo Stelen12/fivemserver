@@ -108,17 +108,3 @@ Citizen.CreateThread(function()
 
     end
 end)
-
-Citizen.CreateThread(function()
-  while true do
-  Citizen.Wait(0)
-    if not beltOn and wasInCar == true then
-
-    	--------- Täältä voit muuttaa ääntä, kun turvavyö ei ole päällä -------- Tässä ----------
-    	--------- Here you can change sounds, when seatbelt is off ------------- Here -----------
-                TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.3, 'seatbelt', 0.3)
-                Citizen.Wait(9000)
-    end
-
-end
-end)

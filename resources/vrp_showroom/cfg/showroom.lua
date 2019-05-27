@@ -45,7 +45,6 @@ vehshop = {
 				{name = "Pagani", description = ''},
 				{name = "McClaren", description = ''},
 				{name = "Fiat", description = ''},
-				{name = "Range", description = ''},
 			}
 		},
 		["Audi"] = {

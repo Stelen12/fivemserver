@@ -18,7 +18,8 @@ cfg.items = {
   ["police_report"] = {"Police Report", "Take it to the Bank Manager.", nil, 0},  -- no choices
   ["ems_report"] = {"EMS Report", "Take it to the Hospital.", nil, 0}, -- no choices
   ["cargo"] = {"Carga", "Una carga para entregar.", nil, 0}, -- no choices
-  ["bass"] = {"Pejerrey", "Un pejerrey.", nil, 0} -- no choices
+  ["pejerrey"] = {"Pejerrey", "Pejerrey fresco.", nil, 0}, -- no choices
+  ["pezgato"] = {"Pez gato", "Pez gato fresco.", nil, 0} -- no choices
 }
 
 -- load more items function

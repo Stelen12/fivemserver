@@ -19,16 +19,27 @@ local copsOnline = 0
 local mecaOnline = 0
 RegisterNetEvent('HG:updateOnlineAdmins')
 AddEventHandler('HG:updateOnlineAdmins', function(stfOnl)
-    -- Citizen.Trace(stfOnl)
+
     if stfOnl.type == 'cop' then
-        copsOnline = stfOnl.cant
-        Citizen.Trace(stfOnl.cant)
+        if(stfOnl.cant > 0) then
+            copsOnline = stfOnl.cant
+        else
+            copsOnline = 0
+        end
     end
     if stfOnl.type == 'same' then
-        sameOnline = stfOnl.cant
+        if(stfOnl.cant > 0) then
+            sameOnline = stfOnl.cant
+        else
+            sameOnline = 0
+        end
     end
     if stfOnl.type == 'meca' then
-        mecaOnline = stfOnl.cant
+        if(stfOnl.cant > 0) then
+            mecaOnline = stfOnl.cant
+        else
+            mecaOnline = 0
+        end
     end
 
 end)

@@ -13,24 +13,24 @@ cfg.item_transformers = {
     max_units=100000,
     units_per_minute=100000,
     x=743.19586181641,y=3895.3967285156,z=30.5, 
-    radius=3, height=1.5, -- area
+    radius=9, height=4.5, -- area
     recipes = {
-      ["Pescar Catfish"] = { -- action name
-        description="Tratando de pescar Catfish", -- action description
+      ["Pescar Pez gato"] = { -- action name
+        description="Tratando de pescar Pez gato", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={ -- items given per unit
-          ["catfish"] = 1
+          ["pezgato"] = 1
         }
       },
-      ["Pescar Bass"] = { -- action name
-        description="Tratando de pescar Bass", -- action description
+      ["Pescar Pejerrey"] = { -- action name
+        description="Tratando de pescar Pejerrey", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={ -- items given per unit
-          ["bass"] = 1
+          ["pejerrey"] = 1
         }
       }
     }
@@ -290,7 +290,7 @@ cfg.item_transformers = {
     r=255,g=125,b=0, -- color
     max_units=100000,
     units_per_minute=100000,
-    x=1618.9204101563,y=3227.7058105469,z=40.411529541016,
+    x=1162.7274169922,y=-1477.8304443359,z=34.842906951904,
     radius=2, height=1.0, -- area
     recipes = {
       ["Recoger carga"] = { -- action name
@@ -571,13 +571,13 @@ cfg.hidden_transformer_duration = 5*24*60 -- 5 days
 cfg.informer = {
   infos = {
     ["weed field"] = 20000,
-	["cocaine dealer"] = 20000,
-	["lsd bar"] = 20000
+    ["cocaine dealer"] = 20000,
+    ["lsd bar"] = 20000
   },
   positions = {
     {2208.0104980469,5577.6987304688,53.739212036133},
     {-631.00543212891,-229.42568969727,38.057052612305},
-	{1992.5993652344,3044.1806640625,47.215068817139}
+	  {1992.5993652344,3044.1806640625,47.215068817139}
   },
   interval = 60, -- interval in minutes for the reseller respawn
   duration = 10, -- duration in minutes of the spawned reseller

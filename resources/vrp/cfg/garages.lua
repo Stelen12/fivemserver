@@ -15,9 +15,9 @@ cfg.limit = 100000000
 
 
 cfg.garage_types = {
-  ["Fisher's Boat"] = {
+  ["Bote de pescador"] = {
     _config = {vtype="boat",blipid=427,blipcolor=28,permissions={"fisher.vehicle"}},
-    ["suntrap"] = {"Fisher's boat",0, "Your favorite boat!"}
+    ["suntrap"] = {"Bote de pescador",1000, "Bote para pescar!!"}
   },
   
   ["High End"]  = {  -- 150k price cap
@@ -196,13 +196,13 @@ cfg.garage_types = {
     ["zion2"] = {"Zion Cabrio", 20000, ""}
   },
 
-  ["vans"] = {
-    _config = {vtype="car",blipid=50,blipcolor=4}
-  },
+  -- ["vans"] = {
+  --   _config = {vtype="car",blipid=50,blipcolor=4}
+  -- },
 
-  ["sedans"] = {
-    _config = {vtype="car",blipid=50,blipcolor=4}
-  },
+  -- ["sedans"] = {
+  --   _config = {vtype="car",blipid=50,blipcolor=4}
+  -- },
 
   ["Motorcycles"] = {
     _config = {vtype="bike",blipid=226,blipcolor=4},
@@ -355,41 +355,29 @@ cfg.garage_types = {
     _config = {vtype="car",blipid=43,blipcolor=1,radius=5.1,permissions={"emergency.helicoptero"}},
     ["polmav"] = {"Helicoptero SAME",0, "emergency"}
   },
-   ["Mafia Garage"] = {
-    _config = {vtype="car",blipid=50,blipcolor=3,permissions={"mafia.vehicle"}},
-	["infernus"] = {"Infernus", 0, ""}, -- THIS IS JUST AN EXAMPLE , ADD MORE IF YOU WANT.
-  },
-  ["Pilotla"] = {
+  --  ["Mafia Garage"] = {
+  --   _config = {vtype="car",blipid=50,blipcolor=3,permissions={"mafia.vehicle"}},
+	--   ["infernus"] = {"Infernus", 0, ""}, -- THIS IS JUST AN EXAMPLE , ADD MORE IF YOU WANT.
+  -- },
+  ["Piloto de carga"] = {
     _config = {vtype="plane",blipid=16,blipcolor=30,permissions={"pilot.vehicle"}},
-    ["jet"] = {"Boeing 747",0, "jet"}
+    ["k5blazer"] = {"Camioneta",1000, "Camioneta para pilotos de carga"}
   },
-  ["Pilotsa"] = {
-    _config = {vtype="plane",blipid=16,blipcolor=30,permissions={"pilot.vehicle"}},
-     ["mammatus"] = {"Small Cargo",0, "mammatus"}
-  },
-  ["airP"] = {
-    _config = {vtype="plane",blipid=16,blipcolor=30,permissions={"air.vehicle"}},
-    ["vestra"] = {"Plane",0, "vestra"}
-  },
-  ["airH"] = {
-    _config = {vtype="plane",blipid=43,blipcolor=30,permissions={"air.vehicle"}},
-     ["volatus"] = {"Helicopter",0, "volatus"}
-  }, 
   ["uber"] = {
     _config = {vtype="car",blipid=50,blipcolor=81,permissions={"uber.vehicle"}},
-    ["surge"] = {"Surge",0, "surge"}
+    ["taxi"] = {"Taxi",1000, "Bora"}
   },
-  ["UPS"] = {
+  ["Correo"] = {
     _config = {vtype="car",blipid=85,blipcolor=81,permissions={"ups.vehicle"}},
-    ["boxville4"] = {"Delivery",0, "boxville4"}
+    ["boxville4"] = {"Camioneta del correo",1000, "Camioneta"}
   },
-  ["Lawyer"] = {
-    _config = {vtype="car",blipid=50,blipcolor=7,permissions={"Lawyer.vehicle"}},
-    ["panto"] = {"Panto", 0, "panto"}
-  },
+  -- ["Lawyer"] = {
+  --   _config = {vtype="car",blipid=50,blipcolor=7,permissions={"Lawyer.vehicle"}},
+  --   ["panto"] = {"Panto", 0, "panto"}
+  -- },
   ["delivery"] = {
     _config = {vtype="bike",blipid=85,blipcolor=31,permissions={"delivery.vehicle"}},
-    ["faggio3"] = {"faggio3",0, "faggio3"}
+    ["faggio3"] = {"Moto devilery",1000, "Moto"}
   },
   -- ["santa"] = {
     -- _config = {vtype="bike",blipid=85,blipcolor=31,permissions={"santa.vehicle"}},
@@ -412,19 +400,19 @@ cfg.garage_types = {
     ["flatbed"] = {"Camion",1000, ""},
     ["towtruck"] = {"Grua",2000, ""},
     ["towtruck2"] = {"Grua 2",55000, ""},
-    ["vr46"] = {"Ducati Desmosedici",100000, ""}
+    ["proc10"] = {"Chevrolet Antigua",100000, ""}
   },
-  ["bankdriver"] = {
+  ["Transportista de dinero"] = {
     _config = {vtype="car",blipid=67,blipcolor=4,permissions={"bankdriver.vehicle"}},
-    ["stockade"] = {"stockade",0, "stockade"}
+    ["stockade"] = {"Camion blindado",1000, "Camion blindado de transportista"}
   },
-  ["Trash Collector"] = {
+  ["Recolector de basura"] = {
     _config = {vtype="car",blipid=67,blipcolor=4,permissions={"trash.vehicle"}},
-    ["trash"] = {"Truck",0, "trash"}
+    ["trash"] = {"Camion de basura",1000, "trash"}
   },
-  ["Medical Driver"] = {
+  ["Transporte medicinal"] = {
     _config = {vtype="car",blipid=67,blipcolor=4,permissions={"medical.vehicle"}},
-    ["pony2"] = {"Medical Weed Van",0, "pony2"}
+    ["pony2"] = {"Camioneta de transporte medicinal",1000, "pony2"}
   }
   
   
@@ -459,12 +447,12 @@ cfg.garages = {
   {"coordinador",284.19772338867,-1419.4770507813,29.626312255859}, -- main
   {"jefe de zona",284.19772338867,-1419.4770507813,29.626312255859}, -- main
   {"uber",907.38049316406,-175.86546325684,74.130157470703}, -- jobs garage
-  {"Lawyer",-1900.7344970703,-560.89245605469,11.802397727966},-- jobs garage
+  -- {"Lawyer",-1900.7344970703,-560.89245605469,11.802397727966},-- jobs garage
   {"delivery",964.514770507813,-1020.13879394531,40.8475074768066},   -- jobs garage
   {"Novato",401.42602539063,-1631.7053222656,29.291942596436},   -- jobs garage
   {"Experimentado",401.42602539063,-1631.7053222656,29.291942596436},   -- jobs garage
   {"Subjefe",401.42602539063,-1631.7053222656,29.291942596436},   -- jobs garage
-  {"bankdriver",222.68756103516,222.95631408691,105.41331481934},   -- jobs garage
+  {"Transportista de dinero",222.68756103516,222.95631408691,105.41331481934},   -- jobs garage
   {"House Garage",-638.08142089844,56.500617980957,43.794803619385},  -- house garage
   {"House Garage",-1457.4909667969,-500.61614990234,32.202766418457},
   {"House Garage",-25.273494720459,-1434.4365234375,30.653142929077},
@@ -473,7 +461,7 @@ cfg.garages = {
   {"House Garage",-354.92651367188,6222.3588867188,31.488939285278},
   {"House Garage",-819.40551757813,183.72904968262,72.136161804199},
   {"House Garage",15.016004562378,547.76171875,176.14279174805},
-  {"UPS",69.852645874023,117.0472946167,79.126907348633},
+  {"Correo",69.852645874023,117.0472946167,79.126907348633},
   {"House Garage",1977.1169433594,3827.2368164063,32.373237609863},
   {"House Garage",2480.5893554688,4953.958984375,45.026481628418},
   {"House Garage",15.016004562378,547.76171875,176.14279174805},
@@ -497,16 +485,12 @@ cfg.garages = {
   {"EMS Helicopters",449.30340576172,-981.24963378906,43.69165802002}, -- Main PD
   {"EMS Helicopters",1770.2171630859,3239.5561523438,42.13171005249}, -- Sandy Shores
   {"EMS Helicopters",-475.24264526367,5988.7353515625,31.336685180664}, -- Paleto Bay  
-  {"Fisher's Boat",1508.8854980469,3908.5732421875,30.031631469727},
-  {"Medical Driver",-319.82263183594,-942.8408203125,31.080617904663},
+  {"Bote de pescador",1508.8854980469,3908.5732421875,30.031631469727},
+  {"Transporte medicinal",-319.82263183594,-942.8408203125,31.080617904663},
   {"Pilotsa",-901.70129394531,-3293.984375,13.944430351257},
-  {"Pilotsa",2128.9069824219,4806.134765625,41.168750762939},
-  {"Pilotsa",1734.9053955078,3297.9689941406,41.223503112793},
-  {"airP",2128.9069824219,4806.134765625,41.168750762939},
-  {"airH",-745.14343261719,-1468.5361328125,5.0005240440369},
-  {"airP",1734.9053955078,3297.9689941406,41.223503112793},
+  {"Piloto de carga",2128.9069824219,4806.134765625,41.168750762939},
   -- {"Santa",-1345.333984375,-2692.7885742188,13.944937705994}  
-  {"Trash Collector",768.86297607422,-1410.4896240234,26.502605438232}
+  {"Recolector de basura",768.86297607422,-1410.4896240234,26.502605438232}
  
   
   

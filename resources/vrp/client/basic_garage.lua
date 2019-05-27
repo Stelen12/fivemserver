@@ -49,7 +49,7 @@ function tvRP.spawnGarageVehicle(vtype,name,pos) -- vtype is the vehicle type (o
       SetModelAsNoLongerNeeded(mhash)
     end
   else
-    tvRP.notify("You can only have one "..vtype.." vehicule out.")
+    tvRP.notify("Solo puedes tener un "..vtype.." vehiculo fuera del garage.")
   end
 end
 
@@ -252,11 +252,11 @@ function tvRP.vc_toggleLock(vtype)
       SetVehicleDoorsLockedForAllPlayers(veh, false)
       SetVehicleDoorsLocked(veh,1)
       SetVehicleDoorsLockedForPlayer(veh, PlayerId(), false)
-      tvRP.notify("Vehicle unlocked.")
+      tvRP.notify("Vehicle abierto.")
     else -- lock
       SetVehicleDoorsLocked(veh,2)
       SetVehicleDoorsLockedForAllPlayers(veh, true)
-      tvRP.notify("Vehicle locked.")
+      tvRP.notify("Vehicle cerrado.")
     end
   end
 end

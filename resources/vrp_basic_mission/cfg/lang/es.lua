@@ -1,31 +1,31 @@
 
-lang local = {
+local lang = {
   repair = "Reparar {1}.",
   reward = "Recompensa: {1} $.",
   bankdriver = "Given Money {1}.",
   reward = "Recompensa: {1} $.",
   entrega = {
-    title = "¡Compre los artículos de los Mercados (ver mapa) y luego tráigalos!",
+    title = "ï¿½Compre los artï¿½culos de los Mercados (ver mapa) y luego trï¿½igalos!",
     item = "- {2} {1}"
   },
   drugseller = {
-title = "Encuentra al Informador Ilegal, recoge las semillas de la ubicación que él da, llévalas al Laboratorio de Drogas (ver mapa) y luego tráelas a mí!",
+title = "Encuentra al Informador Ilegal, recoge las semillas de la ubicaciï¿½n que ï¿½l da, llï¿½valas al Laboratorio de Drogas (ver mapa) y luego trï¿½elas a mï¿½!",
 item = "- {2} {1}"
 },
   hacker = {
-title = "¡Cortar tarjetas de crédito desde las terminales ocultas y luego venderme tarjetas de crédito!",
+title = "ï¿½Cortar tarjetas de crï¿½dito desde las terminales ocultas y luego venderme tarjetas de crï¿½dito!",
 item = "- {2} {1}"
 },
   pescador = {
-title = "Ve a pescar (ver mapa) y luego tráeme esos peces!",
+title = "Ve a pescar (ver mapa) y luego trï¿½eme esos peces!",
 item = "- {2} {1}"
     },
   weapons_smuggler = {
-title = "¡Saca las armas de Paleto Ammunation y luego guarda las armas!",
+title = "ï¿½Saca las armas de Paleto Ammunation y luego guarda las armas!",
 item = "- {2} {1}"
     },
   medical = {
-title = "¡Obtenga la hierba medicinal (ver mapa) y luego envíeme la hierba medicinal!",
+title = "ï¿½Obtenga la hierba medicinal (ver mapa) y luego envï¿½eme la hierba medicinal!",
 item = "- {2} {1}"
     },
   -- santa = {
@@ -33,23 +33,23 @@ item = "- {2} {1}"
 -- item = "- {2} {1}"
     -- -},
   piloto = {
-title = "¡Recoge carga (ver mapa) y luego me entrega la carga!",
+title = "ï¿½Recoge carga (ver mapa) y luego me entrega la carga!",
 item = "- {2} {1}"
     },
-  policía = {
-title = "Obtenga informes de la policía (ver mapa) y entrégueseles a los gerentes del banco para que muestren la presencia policial",
+  policï¿½a = {
+title = "Obtenga informes de la policï¿½a (ver mapa) y entrï¿½gueseles a los gerentes del banco para que muestren la presencia policial",
 item = "- {2} {1}"
     },
   ems = {
-title = "Obtener informes médicos (ver mapa) y luego entregarlos en el Hospital.",
+title = "Obtener informes mï¿½dicos (ver mapa) y luego entregarlos en el Hospital.",
 item = "- {2} {1}"
     },
   trash = {
-title = "Recolectar basura (ver mapa) y traerlos a mí",
+title = "Recolectar basura (ver mapa) y traerlos a mï¿½",
 item = "- {2} {1}"
     },
   forger = {
-title = "¡Obtenga tarjetas de crédito de los hackers, conviértalas en Fake ID (ver mapa) y tráigalas!",
+title = "ï¿½Obtenga tarjetas de crï¿½dito de los hackers, conviï¿½rtalas en Fake ID (ver mapa) y trï¿½igalas!",
 item = "- {2} {1}"
     }
 }
