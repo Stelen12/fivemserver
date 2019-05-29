@@ -25,9 +25,9 @@ Citizen.CreateThread(function() -- coma thread
 	      if skipper then
 		    HKserver.docsOnline({},function(docs)
 		      if docs == 0 then
-			    vRP.notify({"~r~There's nobody to revive you.\n~b~Press ~g~E~b~ to respawn."})
+			    vRP.notify({"~r~No hay nadie para revivirte.\n~b~Presiona ~g~E~b~ para respawnear."})
 			  else
-			    vRP.notify({"~g~EMS is online.\n~b~Press ~g~E~b~ to call an ambulance."})
+			    vRP.notify({"~g~SAME online.\n~b~Presiona ~g~E~b~ para llamarlos."})
 			  end
 		    end)
           end

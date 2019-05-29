@@ -298,7 +298,7 @@ cfg.trash = {
   ["mission.collect.trash"] = {
     positions = common_trash_positions,
     items = {
-      ["trash"] = {10,20,350}
+      ["trash"] = {10,20,280}
     }
   }
 }

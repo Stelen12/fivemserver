@@ -148,12 +148,12 @@ if enableBankingGui then
       Citizen.Wait(0)
       if(IsNearBank() or IsNearATM()) then
         if (atBank == false) then
-          TriggerEvent('chatMessage', "", {255, 255, 255}, "Press ^5E^0 to access bank");
+          TriggerEvent('chatMessage', "", {255, 255, 255}, "Presiona ^5E^0 para acceder al banco");
         end
         atBank = true
         if IsControlJustPressed(1, 51)  then -- IF INPUT_PICKUP Is pressed
           if (IsInVehicle()) then
-            TriggerEvent('chatMessage', "", {255, 0, 0}, "^1You cannot use the bank in a vehicle!");
+            TriggerEvent('chatMessage', "", {255, 0, 0}, "^1No puedes usar el banco en el vehiculo");
           else
             if bankOpen then
               closeGui()
@@ -292,13 +292,13 @@ RegisterNetEvent('bank:deposit')
 AddEventHandler('bank:deposit', function(amount)
   if(IsNearBank() == true or depositAtATM == true and IsNearATM() == true or depositAnywhere == true ) then
     if (IsInVehicle()) then
-      TriggerEvent('chatMessage', "", {0, 255, 0}, "^1You cannot use the atm in a vehicle!");
+      TriggerEvent('chatMessage', "", {0, 255, 0}, "^1No puedes usar el cajero desde el auto!");
     else
       TriggerServerEvent("bank:deposit", tonumber(amount))
-      TriggerEvent('chatMessage', "BANK", {0, 200, 0}, "^0You deposited ^5$"..amount);
+      TriggerEvent('chatMessage', "BANK", {0, 200, 0}, "^0Depositaste ^5$"..amount);
     end
   else
-    TriggerEvent('chatMessage', "", {0, 255, 0}, "^1You can only deposit at a bank!");
+    TriggerEvent('chatMessage', "", {0, 255, 0}, "^1Solo podes depositar en un banco!");
   end
 end)
 

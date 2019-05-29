@@ -35,7 +35,7 @@ cfg.hotkeys = {
             end
 		  end)
 		else
-		  vRP.notify({"~r~You already called the ambulance."})
+		  vRP.notify({"~r~Acabas de llamar al SAME."})
 		end
 	  end
 	end,
@@ -43,7 +43,7 @@ cfg.hotkeys = {
 	  -- Do nothing on release because it's toggle.
 	end,
   },
-    [213] = {
+    [20] = {
     --home on numberpad toggle User List
     group = 0, 
 	pressed = function() 

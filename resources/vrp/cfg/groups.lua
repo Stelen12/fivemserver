@@ -51,7 +51,7 @@ cfg.groups = {
   -- },
   ["recruiter"] = {
     "player.list",
-	"player.group.add",
+	  "player.group.add",
     "player.group.remove"
     },
   ["mod"] = {
@@ -59,6 +59,8 @@ cfg.groups = {
     "admin.announce",
     "player.list",
     "player.kick",
+    "player.ban",
+    "player.unban",
     "player.coords",
     "player.tptome",
 	"emergency.revive",
@@ -80,7 +82,7 @@ cfg.groups = {
 	"player.loot",
 	"player.player_menu",
 	"player.userlist",
-    "police.seizable",	-- can be seized
+  "police.seizable",	-- can be seized
 	"user.paycheck"
   },
   ["Pescador"] = {

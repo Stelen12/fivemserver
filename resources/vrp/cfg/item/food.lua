@@ -64,7 +64,6 @@ end
 
 -- DRINKS --
 items["water"] = {"Agua","", gen("drink",0,-25),0.5}
-items["tacos"] = {"Tacos","", gen("drink",0,-25),0.5}
 items["Leche"] = {"Leche","", gen("drink",0,-5),0.5}
 items["Cafe"] = {"Cafe","", gen("drink",0,-10),0.2}
 items["Coca Cola"] = {"Coca Cola","", gen("drink",0,-15),0.2}
@@ -79,12 +78,13 @@ items["Vodka"] = {"Vodka","", gen("drink",15,-65),0.5}
 --FOOD
 
 items["Pan"] = {"Pan","", gen("eat",-10,0),0.5}
+items["tacos"] = {"Tacos","", gen("eat",-12,0),0.5}
 items["Pitusas"] = {"Pitusas","", gen("eat",-15,0),0.2}
 items["Sanguche de milanesa"] = {"Sanguche de milanesa","", gen("eat",-20,0),0.2}
-items["Sanguche de bondiola"] = {"Sanguche de bondiola","", gen("eat",-45,0),0.85}
+items["Sanguche de bondiola"] = {"Sanguche de bondiola","", gen("eat",-25,0),0.85}
 items["Papas Fritas"] = {"Papas Fritas","", gen("eat",-25,0),0.5}
-items["Choripan"] = {"Choripan","", gen("eat",10,15),0.3}
-items["Lechon"] = {"Lechon","", gen("eat",10,15),0.3}
+items["Choripan"] = {"Choripan","", gen("eat",-30,3),0.3}
+items["Lechon"] = {"Lechon","", gen("eat",-35,5),0.3}
 
 
 return items

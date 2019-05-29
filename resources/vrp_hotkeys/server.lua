@@ -31,7 +31,7 @@ end
 
 function vRPhk.helpComa(x,y,z)
   for k,v in pairs(emsServices) do
-  vRP.sendServiceAlert({source,v,x,y,z,"Help! I've fallen and can't get up!"}) -- people will change this message anyway haha
+  vRP.sendServiceAlert({source,v,x,y,z,"Ayuda! Estoy herido, creo que me desangro!"}) -- people will change this message anyway haha
   end
 end
 
@@ -44,7 +44,7 @@ function vRPhk.openUserList()
       player_lists[player] = nil
       vRPclient.removeDiv(player,{"user_list"})
     else -- show
-      local content = "<span class=\"id\">ID</span><span class=\"pseudo\">NICKNAME</span><span class=\"name\">ROLEPLAY NAME</span><span class=\"job\">PROFESSION</span>"
+      local content = "<span class=\"id\">ID</span><span class=\"pseudo\">NICKNAME</span><span class=\"name\">NOMBRE REAL</span><span class=\"job\">TRABAJO</span>"
       local count = 0
 	  local users = vRP.getUsers({})
       for k,v in pairs(users) do
@@ -65,7 +65,7 @@ function vRPhk.openUserList()
             local css = [[
               .div_user_list{ 
                 margin: auto; 
-				text-align: left;
+				        text-align: left;
                 padding: 8px; 
                 width: 650px; 
                 margin-top: 100px; 

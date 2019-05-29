@@ -33,7 +33,7 @@ end
 AddEventHandler('chatMessage', function(source, x, msg)
 	local msg = string.lower(msg)
 	local identifier = GetPlayerIdentifiers(source)[1]
-	if msg == "/repair" then
+	if msg == "/reparar" then
 		CancelEvent()
 		if everyoneWhitelisted == true then
 			TriggerClientEvent('iens:repair', source)

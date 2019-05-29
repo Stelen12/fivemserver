@@ -105,7 +105,7 @@ AddEventHandler("vRP:playerLeave",function(user_id, source) -- asta cred ca mere
     end
     for _, v in pairs(meca_grades) do --Meca
         if vRP.hasGroup({user_id, v}) then
-            onlineMeca = onlineMeca + 1
+            onlineMeca = onlineMeca - 1
             local response = {
                 type = 'meca',
                 cant = onlineMeca

@@ -632,7 +632,7 @@ local ch_userlist = {function(player,choice)
         count = count+1
         local source = vRP.getUserSource({k})
         vRP.getUserIdentity({k, function(identity)
-		  if source ~= nil then
+      if source ~= nil and source ~= 'unknown' then
             content = content.."<br /><span class=\"id\">"..k.."</span><span class=\"pseudo\">"..vRP.getPlayerName({source}).."</span>"
             if identity then
               content = content.."<span class=\"name\">"..htmlEntities.encode(identity.firstname).." "..htmlEntities.encode(identity.name).."</span><span class=\"job\">"..vRP.getUserGroupByType({k,"job"}).."</span>"

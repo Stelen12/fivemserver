@@ -52,24 +52,19 @@ div.img img{
     letter-spacing: 1px;
 }
 .content .logo{
-    padding:50px 35px;
-    /* background: rgba(255, 255, 255, 0.4); */
-    border-radius: 50%;
-    display: flex;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    /* display:flex;
     justify-content: center;
-    position:relative;
+    align-items: center; */
 }
-.content .logo img.log{
-    margin-top: -30px;
+.content .logo img{
+    margin-top: -6%;
+    margin-left:-50px;
     vertical-align: top;
-    height: 400px;
-    width: auto;
-}
-.content .logo .title{
-  position: absolute;
-  top:45%;
-  left:12%;
-  opacity: .94;
 }
 .song{
     position: absolute;

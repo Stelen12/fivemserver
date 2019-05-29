@@ -139,6 +139,16 @@ local function ch_kick(player,choice)
   end
 end
 
+local function ch_revive(player,choice)
+  local user_id = vRP.getUserId(player)
+  if user_id ~= nil and vRP.hasPermission(user_id,"admin.revive") then
+    vRP.prompt(player,"ID USUARIO: ","",function(player,id)
+      id = parseInt(id)
+      vRPclient.varyHealth(nplayer,{50})
+    end)
+  end
+end
+
 local function ch_ban(player,choice)
   local user_id = vRP.getUserId(player)
   if user_id ~= nil and vRP.hasPermission(user_id,"player.ban") then
@@ -371,6 +381,9 @@ vRP.registerMenuBuilder("main", function(add, data)
         end
         if vRP.hasPermission(user_id,"player.kick") then
           menu["Kick"] = {ch_kick}
+        end
+        if vRP.hasPermission(user_id,"player.revive") then
+          menu["Revivir"] = {ch_revive}
         end
         if vRP.hasPermission(user_id,"player.ban") then
           menu["Ban"] = {ch_ban}

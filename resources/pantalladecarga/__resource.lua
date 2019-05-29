@@ -4,7 +4,6 @@ files {
     'js/app.js',
     'media/thumb.jpg',
     'media/logo.png',
-    'media/log.png',
     'media/tumbando.mp3',
     'media/cursor.png'
 }
