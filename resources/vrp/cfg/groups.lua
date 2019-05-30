@@ -156,6 +156,7 @@ cfg.groups = {
     --"player.list",
     "police.menu_interaction",
     "emsChief.paycheck",
+    "toggle.service.same",
     "player.blips"
   },
   ["SAME - Doctor"] = {
@@ -173,6 +174,7 @@ cfg.groups = {
     "ems.whitelisted",
     "ems.loadshop",
     --"player.list",
+    "toggle.service.same",
     "police.menu_interaction",
     "emsMedic.paycheck",
     "player.blips"
@@ -190,7 +192,8 @@ cfg.groups = {
 	"emergency.cirujano",
 	"emergency.market",
 	"emscheck.revive",
-	"ems.whitelisted",
+  "ems.whitelisted",
+  "toggle.service.same",
 	"ems.loadshop",
 	--"player.list",
 	"police.menu_interaction",
@@ -208,7 +211,8 @@ cfg.groups = {
 	"emergency.cloakroom",
 	"emscheck.revive",
 	"emergency.coordinador",
-	"emergency.market",
+  "emergency.market",
+  "toggle.service.same",
 	"ems.whitelisted",
 	"ems.loadshop",
 	--"player.list",
@@ -226,7 +230,8 @@ cfg.groups = {
     "emergency.service",
 	"emergency.cloakroom",
 	"emscheck.revive",
-	"emergency.jefe",
+  "emergency.jefe",
+  "toggle.service.same",
 	"emergency.market",
 	"ems.whitelisted",
 	"ems.loadshop",
@@ -234,6 +239,12 @@ cfg.groups = {
 	"police.menu_interaction",
 	"jefe.paycheck",
 	"player.blips"
+  },
+  ["SAME - Fuera de servicio"] = {
+    _config = { gtype = "job",
+	  onspawn = function(player) vRPclient.notify(player,{"Eres SAME, pero te encuentras fuera de servicio."}) end
+	},
+    "toggle.service.same"
   },
   ["Mecanico - Novato"] = {
     _config = { gtype = "job",

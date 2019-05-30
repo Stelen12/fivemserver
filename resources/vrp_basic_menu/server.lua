@@ -41,19 +41,30 @@ function vRPbm.logInfoToFile(file,info)
 end
 -- MAKE CHOICES
 --toggle service
-local choice_service = {function(player,choice)
+
+local last_group = nil
+
+local choice_service_same = {function(player,choice)
   local user_id = vRP.getUserId({player})
-  local service = "onservice"
+  local service = "SAME - Fuera de servicio"
+
+  if vRP.getUserGroupByType({user_id,"job"}) ~= service then
+    last_group = vRP.getUserGroupByType({user_id,"job"})
+  end
+  
+  print(group)
+  
   if user_id ~= nil then
     if vRP.hasGroup({user_id,service}) then
-	  vRP.removeUserGroup({user_id,service})
-	  if vRP.hasMission({player}) then
-		vRP.stopMission({player})
-	  end
+      vRP.removeUserGroup({user_id,service})
+      vRP.addUserGroup({user_id,last_group})
+      vRPclient.notify(player,{"~g~En servicio."})
+    else
+      vRP.addUserGroup({user_id,service})
+      if vRP.hasMission({player}) then
+        vRP.stopMission({player})
+      end
       vRPclient.notify(player,{"~r~Fuera de servicio"})
-	else
-	  vRP.addUserGroup({user_id,service})
-      vRPclient.notify(player,{"~g~En servicio"})
 	end
   end
 end, "Salir/Entrar en serivicio"}
@@ -954,8 +965,8 @@ vRP.registerMenuBuilder({"main", function(add, data)
       choices["Jugador"] = ch_player_menu -- opens player submenu
     end
 	
-    if vRP.hasPermission({user_id,"toggle.service"}) then
-      choices["Servicio"] = choice_service -- toggle the receiving of missions
+    if vRP.hasPermission({user_id,"toggle.service.samea"}) then
+      choices["Servicio"] = choice_service_same -- toggle the receiving of missions
     end
 	
     if vRP.hasPermission({user_id,"player.loot"}) then
