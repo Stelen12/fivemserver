@@ -95,6 +95,10 @@ cfg.garage_types = {
     ["zx10r"] = {"Zx",1000000, ""},
     ["amarok"] = {"Volkswagen Amarok V6",1000000, ""},
     ["yzfr6"] = {"Yamaha R6",1000000, ""},
+    ["eclipse"] = {"Eclipse",1000000, ""},
+    ["f150"] = {"Ford Raptor",1000000, ""},
+    ["skylinekaira"] = {"Skyline",1000000, ""},
+    ["supra2"] = {"Supra",1000000, ""},
 
 
   },

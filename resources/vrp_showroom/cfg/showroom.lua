@@ -45,6 +45,7 @@ vehshop = {
 				{name = "Pagani", description = ''},
 				{name = "McClaren", description = ''},
 				{name = "Fiat", description = ''},
+				{name = "Otros", description = ''},
 			}
 		},
 		["Audi"] = {
@@ -121,6 +122,7 @@ vehshop = {
 			buttons = {
 				{name = "Focus", costs = 350000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "focusrs"},
 				{name = "Mustang", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "dominator"},
+				{name = "Raptor", costs = 500000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "f150"},
 			}
 		},
 		["Bugatti"] = {
@@ -184,6 +186,15 @@ vehshop = {
 			name = "Fiat",
 			buttons = {
 				{name = "Punto", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "gresley"},
+			}
+		},
+		["Otros"] = {
+			title = "Otros",
+			name = "Otros",
+			buttons = {
+				{name = "Supra", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "supra2"},
+				{name = "Skyline", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "skylinekaira"},
+				{name = "Eclipse", costs = 60000, speed = 40, acce = 50, brake = 60, trac = 30, description = {}, model = "eclipse"},
 			}
 		},
 
